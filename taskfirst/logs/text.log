@@ -1,0 +1,8 @@
+
+2021-10-01 10:10:27.272 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException:  (Системе не удается найти указанный путь)
+2021-10-01 10:11:05.469 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException:  (Системе не удается найти указанный путь)
+2021-10-01 10:11:27.921 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException: datafile\array (Не удается найти указанный файл)
+2021-10-01 10:12:47.298 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException:  (Системе не удается найти указанный путь)
+2021-10-01 10:13:06.387 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException: ghhi.txt (Не удается найти указанный файл)
+2021-10-01 10:14:17.178 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException:  (Системе не удается найти указанный путь)
+2021-10-01 10:15:26.335 [main] ERROR epam.taskfirst.reader.Reader - java.io.FileNotFoundException:  (Системе не удается найти указанный путь)
