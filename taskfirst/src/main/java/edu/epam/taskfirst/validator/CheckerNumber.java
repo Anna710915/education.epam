@@ -1,15 +1,15 @@
 package edu.epam.taskfirst.validator;
 
 public class CheckerNumber {
-    final static String REGEX_2 = "(-)?\\d+";
-    final String REGEX_3 = "\\s+";
+    static final String REGEX_NUMBER = "(-)?\\d+";
+    final String REGEX_DELIMiTER = "\\s+";
     public boolean checkLine (String line){
         line=line.trim();
-        String[] numbers = line.split(REGEX_3);
+        String[] numbers = line.split(REGEX_DELIMiTER);
         boolean bool = true;
         for (String number: numbers){
-            if(!number.matches(REGEX_2)){
-                return number.matches(REGEX_2);
+            if(!number.matches(REGEX_NUMBER)){
+                return number.matches(REGEX_NUMBER);
             }
         }
         return bool;

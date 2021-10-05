@@ -1,29 +1,28 @@
 package edu.epam.taskfirst.reader;
 
-import edu.epam.taskfirst.reader.Reader;
+import edu.epam.taskfirst.exception.CustomException;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import static org.testng.Assert.fail;
-import java.io.FileNotFoundException;
 
 public class ReaderTest {
 
-    Reader reader;
+    CustomReader reader;
     @BeforeClass
     public void create() {
-        reader = new Reader();
+        reader = new CustomReader();
     }
 
-    @Test(expectedExceptions = FileNotFoundException.class)
-    public void readFileTestFalse() {
+    @Test(expectedExceptions = CustomException.class)
+    public void readFileTestFalse() throws CustomException {
         String data = "";
         String actual = reader.readFile(data);
         fail("Test is failed");
     }
 
     @Test
-    public void readFileTestTrue() {
+    public void readFileTestTrue() throws CustomException {
         String data = "datafile\\array.txt";
         String actual = reader.readFile(data);
     }

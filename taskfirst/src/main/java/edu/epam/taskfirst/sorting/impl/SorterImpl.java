@@ -1,13 +1,15 @@
-package edu.epam.taskfirst.sorting;
+package edu.epam.taskfirst.sorting.impl;
 
+import edu.epam.taskfirst.sorting.CustomSorter;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Arrays;
+import java.util.stream.IntStream;
 
-public class Sorter {
-    static Logger Logger = LogManager.getLogger();
+
+public class SorterImpl implements CustomSorter {
+    static Logger logger = LogManager.getLogger();
 
     private int[] cloneArray (int array[]){
         int length= array.length;
@@ -18,8 +20,15 @@ public class Sorter {
         return clone;
     }
 
-    public void bubble(int array[]){
-        Logger.log(Level.INFO,"Bubble sort:");
+    public int[] sortStream (int array[]){
+        logger.log(Level.INFO,"Sort :");
+        return IntStream.of(array).
+                sorted().
+                toArray();
+    }
+
+    public int[] bubble(int array[]){
+        logger.log(Level.INFO,"Bubble sort:");
         int[] clone = cloneArray(array);
         int buffer=0;
         for(var i =1;i<clone.length;i++){
@@ -31,11 +40,11 @@ public class Sorter {
                 }
             }
         }
-        Logger.info(Arrays.toString(clone));
+        return clone;
     }
 
-    public void selection(int array[]){
-        Logger.log(Level.INFO,"Selection sort:");
+    public int[] selection(int array[]){
+        logger.log(Level.INFO,"Selection sort:");
         int[] clone = cloneArray(array);
         int buffer=0, imin=0;
         for(var i =0;i<clone.length-1;i++){
@@ -49,11 +58,11 @@ public class Sorter {
                 clone[i]=buffer;
             }
         }
-        Logger.info(Arrays.toString(clone));
+        return clone;
     }
 
-    public void insert(int array[]){
-        Logger.log(Level.INFO,"Insert sort:");
+    public int[] insert(int array[]){
+        logger.log(Level.INFO,"Insert sort:");
         int[] clone = cloneArray(array);
         int buffer=0, j=0;
         for(var i =1;i<clone.length;i++){
@@ -63,7 +72,7 @@ public class Sorter {
             }
             clone[j+1]=buffer;
         }
-        Logger.info(Arrays.toString(clone));
+       return clone;
     }
 
 }

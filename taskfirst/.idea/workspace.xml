@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -32,13 +33,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pretask0" />
   </component>
-  <component name="RunManager" selected="TestNG.ReaderTest.readFileTestFalse">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\datafile" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src\main\resources" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src\main\resource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.UserMain">
     <configuration name="UserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirst.user.UserMain" />
+      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirst.usermain.UserMain" />
       <module name="taskfirst" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.epam.taskfirst.user.*" />
+          <option name="PATTERN" value="edu.epam.taskfirst.usermain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,10 +110,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserMain" />
         <item itemvalue="TestNG.ReaderTest.readFileTestFalse" />
         <item itemvalue="TestNG.ReaderTest.readFileTestTrue" />
         <item itemvalue="TestNG.ReaderTest" />
-        <item itemvalue="Application.UserMain" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +131,11 @@
       <workItem from="1632984006193" duration="86000" />
       <workItem from="1633015937812" duration="4651000" />
       <workItem from="1633071441555" duration="1146000" />
+      <workItem from="1633114414292" duration="7687000" />
+      <workItem from="1633166387038" duration="529000" />
+      <workItem from="1633166970411" duration="202000" />
+      <workItem from="1633203842768" duration="5295000" />
+      <workItem from="1633416782729" duration="1456000" />
     </task>
     <servers />
   </component>
