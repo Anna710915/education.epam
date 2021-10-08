@@ -15,7 +15,7 @@ public class UserMain {
     static final Logger logger = LogManager.getLogger();
 
     public static void main(String[] args){
-        String filename = "datafile\\array.txt";
+        String filename = "src\\main\\resources\\datafile\\array.txt";
         try {
             CustomReader reader = new CustomReader();
             String lineNumbers = reader.readFile(filename);
@@ -24,14 +24,17 @@ public class UserMain {
             CustomParser parser = new CustomParser();
             CustomArray array = new CustomArray(parser.convert(lineNumbers));
             int[] arrayNumbers=array.getArray();
+            int[] a={1,23,4};
+            CustomArray array1 = new CustomArray(a);
+            CustomArray array2 = new CustomArray(a);
+            System.out.println(array1.hashCode());
+            System.out.println(array2.hashCode());
             logger.log(Level.INFO,"Array objects are created");
             ActionImpl action = new ActionImpl();
             int result[];
             double res;
             result=action.makeCondition(arrayNumbers, 2);
             logger.info(Arrays.toString(result));
-//            res=action.findAverage(arrayNumbers);
-//            logger.info(Double.toString(res));
             SorterImpl sorter= new SorterImpl();
             int arr[]=sorter.sortStream(arrayNumbers);
             logger.info(Arrays.toString(arr));

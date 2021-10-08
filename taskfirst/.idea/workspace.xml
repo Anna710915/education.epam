@@ -13,13 +13,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1ynxrXj5itHhRxDiWMaUzRdzmfx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,10 +43,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\datafile" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src\main\resources" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst" />
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src\main\resource" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src\main" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\taskfirst\src\main\java\edu\epam\taskfirst" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="edu.epam.taskfirst.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Application.UserMain">
@@ -51,6 +63,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="govno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirst.usermain.govno" />
+      <module name="taskfirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.epam.taskfirst.usermain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckNumberTest.checkLineTestFalse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskfirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.epam.taskfirst.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.epam.taskfirst.validator" />
+      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirst.validator.CheckNumberTest" />
+      <option name="METHOD_NAME" value="checkLineTestFalse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReaderTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskfirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.epam.taskfirsttest.reader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.epam.taskfirsttest.reader" />
+      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirsttest.reader.ReaderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,48 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReaderTest.readFileTestFalse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="taskfirst" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.epam.taskfirst.reader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.epam.taskfirst.reader" />
-      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirst.reader.ReaderTest" />
-      <option name="METHOD_NAME" value="readFileTestFalse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReaderTest.readFileTestTrue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="taskfirst" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.epam.taskfirst.reader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.epam.taskfirst.reader" />
-      <option name="MAIN_CLASS_NAME" value="edu.epam.taskfirst.reader.ReaderTest" />
-      <option name="METHOD_NAME" value="readFileTestTrue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserMain" />
-        <item itemvalue="TestNG.ReaderTest.readFileTestFalse" />
-        <item itemvalue="TestNG.ReaderTest.readFileTestTrue" />
+        <item itemvalue="Application.govno" />
+        <item itemvalue="TestNG.ReaderTest (1)" />
         <item itemvalue="TestNG.ReaderTest" />
+        <item itemvalue="TestNG.CheckNumberTest.checkLineTestFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +161,11 @@
       <workItem from="1633166970411" duration="202000" />
       <workItem from="1633203842768" duration="5295000" />
       <workItem from="1633416782729" duration="1456000" />
+      <workItem from="1633418439437" duration="547000" />
+      <workItem from="1633420974363" duration="2636000" />
+      <workItem from="1633507171365" duration="4500000" />
+      <workItem from="1633630459480" duration="5014000" />
+      <workItem from="1633674900984" duration="477000" />
     </task>
     <servers />
   </component>

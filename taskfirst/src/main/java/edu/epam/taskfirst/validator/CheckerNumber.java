@@ -2,8 +2,8 @@ package edu.epam.taskfirst.validator;
 
 public class CheckerNumber {
     static final String REGEX_NUMBER = "(-)?\\d+";
-    final String REGEX_DELIMiTER = "\\s+";
-    public boolean checkLine (String line){
+    static final String REGEX_DELIMiTER = "\\s+";
+    public static boolean checkLine (String line){
         line=line.trim();
         String[] numbers = line.split(REGEX_DELIMiTER);
         boolean bool = true;

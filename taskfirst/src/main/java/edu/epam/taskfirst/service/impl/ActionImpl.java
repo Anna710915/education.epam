@@ -13,12 +13,17 @@ public class ActionImpl implements CustomAction {
     static Logger logger = LogManager.getLogger();
 
     public int findMin(int[] array){
-//        int max=array[0], min = array[0];
-//        for(int i = 1;i<array.length;i++) {
-//            if(array[i]<min){
-//                min=array[i];
-//            }
-//        }
+        int max=array[0], min = array[0];
+        for(int i = 1;i<array.length;i++) {
+            if(array[i]<min){
+                min=array[i];
+            }
+        }
+        logger.log(Level.INFO,"Minimum number is ");
+        return min;
+    }
+
+    public int findMinStream(int[] array){
         int min = IntStream.of(array)
                 .min()
                 .getAsInt();
@@ -27,12 +32,17 @@ public class ActionImpl implements CustomAction {
     }
 
     public int findMax(int[] array){
-//        int max=array[0];
-//        for(int i = 1;i<array.length;i++){
-//            if(array[i]>max){
-//                max=array[i];
-//            }
-//        }
+        int max=array[0];
+        for(int i = 1;i<array.length;i++){
+            if(array[i]>max){
+                max=array[i];
+            }
+        }
+        logger.log(Level.INFO,"Maximum number is ");
+        return max;
+    }
+
+    public int findMaxStream(int[] array){
         int max = IntStream.of(array)
                 .max()
                 .getAsInt();
@@ -41,18 +51,18 @@ public class ActionImpl implements CustomAction {
     }
 
     public int[] makeCondition(int[] array, int choice){
-//        int i = 0;
-//        int cloneLength=array.length;
-//        int []cloneArray = new int[cloneLength];
-//        for(int counter = 0;counter<cloneLength;counter++) {
-//            cloneArray[counter]=array[counter];
-//        }
-//        while(i<cloneLength){
-//            if(cloneArray[i]>0){
-//                cloneArray[i]=cloneArray[i]*choice;
-//            }
-//            i++;
-//        }
+        int i = 0;
+        while(i<array.length){
+            if(array[i]>0){
+                array[i]=array[i]*choice;
+            }
+            i++;
+        }
+        logger.info("Multiply positive numbers: ");
+        return array;
+    }
+
+    public int[] makeConditionStream(int[] array, int choice){
         logger.info("Multiply positive numbers: ");
         return IntStream.of(array)
                 .filter(s -> s > 0)
@@ -61,11 +71,15 @@ public class ActionImpl implements CustomAction {
     }
 
     public double findAverage(int[] array){
-//        int sum=0;
-//        for(int number: array){
-//            sum+=number;
-//        }
-//        double average = (double)sum/array.length;
+        int sum=0;
+        for(int number: array){
+            sum+=number;
+        }
+        double average = (double)sum/array.length;
+        return average;
+    }
+
+    public double findAverageStream(int[] array){
         logger.log(Level.INFO,"Average number is ");
         return IntStream.of(array)
                 .average()
@@ -73,22 +87,32 @@ public class ActionImpl implements CustomAction {
     }
 
     public int sumArray(int[] array){
-//        int sum = 0;
-//        for(int number: array){
-//            sum+=number;
-//        }
+        int sum = 0;
+        for(int number: array){
+            sum+=number;
+        }
+        logger.log(Level.INFO,"Numbers's sum is ");
+        return sum;
+    }
+
+    public int sumArrayStream(int[] array){
         logger.log(Level.INFO,"Numbers's sum is ");
         return IntStream.of(array)
                 .sum();
     }
 
     public int findPositive(int[] array){
-//        int positiveCounter=0;
-//        for(int i = 0;i<array.length;i++){
-//            if(array[i]>0){
-//                positiveCounter++;
-//            }
-//        }
+        int positiveCounter=0;
+        for(int i = 0;i<array.length;i++){
+            if(array[i]>0){
+                positiveCounter++;
+            }
+        }
+        logger.log(Level.INFO,"Positive numbers are ");
+        return positiveCounter;
+    }
+
+    public int findPositiveStream(int[] array){
         logger.log(Level.INFO,"Positive numbers are ");
         IntStream stream = IntStream.of(array);
         long positiveCounter = stream.filter(s->s>0)
@@ -97,12 +121,17 @@ public class ActionImpl implements CustomAction {
     }
 
     public int findNegative(int[] array){
-//        int negativeCounter=0;
-//        for(int i = 0;i<array.length;i++){
-//           if(array[i]<0){
-//                negativeCounter++;
-//           }
-//        }
+        int negativeCounter=0;
+        for(int i = 0;i<array.length;i++){
+           if(array[i]<0){
+                negativeCounter++;
+           }
+        }
+        logger.log(Level.INFO,"Negative numbers are ");
+        return negativeCounter;
+    }
+
+    public int findNegativeStream(int[] array){
         IntStream stream = IntStream.of(array);
         long negativeCounter = stream.filter(s->s<0)
                 .count();

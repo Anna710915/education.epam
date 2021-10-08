@@ -11,15 +11,6 @@ import java.util.stream.IntStream;
 public class SorterImpl implements CustomSorter {
     static Logger logger = LogManager.getLogger();
 
-    private int[] cloneArray (int array[]){
-        int length= array.length;
-        int[] clone= new int[length];
-        for(int counter = 0;counter<length;counter++) {
-            clone[counter]=array[counter];
-        }
-        return clone;
-    }
-
     public int[] sortStream (int array[]){
         logger.log(Level.INFO,"Sort :");
         return IntStream.of(array).
@@ -29,50 +20,47 @@ public class SorterImpl implements CustomSorter {
 
     public int[] bubble(int array[]){
         logger.log(Level.INFO,"Bubble sort:");
-        int[] clone = cloneArray(array);
         int buffer=0;
-        for(var i =1;i<clone.length;i++){
-            for(var j =clone.length-1;j>=i;j--){
-                if(clone[j-1]>clone[j]){
-                    buffer=clone[j-1];
-                    clone[j-1]=clone[j];
-                    clone[j]=buffer;
+        for(var i =1;i<array.length;i++){
+            for(var j =array.length-1;j>=i;j--){
+                if(array[j-1]>array[j]){
+                    buffer=array[j-1];
+                    array[j-1]=array[j];
+                    array[j]=buffer;
                 }
             }
         }
-        return clone;
+        return array;
     }
 
     public int[] selection(int array[]){
         logger.log(Level.INFO,"Selection sort:");
-        int[] clone = cloneArray(array);
         int buffer=0, imin=0;
-        for(var i =0;i<clone.length-1;i++){
+        for(var i =0;i<array.length-1;i++){
             imin=i;
-            for(var j =i+1;j<clone.length;j++){
-                imin=clone[imin]>clone[j]?j:imin;
+            for(var j =i+1;j<array.length;j++){
+                imin=array[imin]>array[j]?j:imin;
             }
             if(imin!=i){
-                buffer=clone[imin];
-                clone[imin]=clone[i];
-                clone[i]=buffer;
+                buffer=array[imin];
+                array[imin]=array[i];
+                array[i]=buffer;
             }
         }
-        return clone;
+        return array;
     }
 
     public int[] insert(int array[]){
         logger.log(Level.INFO,"Insert sort:");
-        int[] clone = cloneArray(array);
         int buffer=0, j=0;
-        for(var i =1;i<clone.length;i++){
-            buffer=clone[i];
-            for(j =i-1;j>=0 && buffer<clone[j];j--){
-               clone[j+1]=clone[j];
+        for(var i =1;i<array.length;i++){
+            buffer=array[i];
+            for(j =i-1;j>=0 && buffer<array[j];j--){
+               array[j+1]=array[j];
             }
-            clone[j+1]=buffer;
+            array[j+1]=buffer;
         }
-       return clone;
+       return array;
     }
 
 }
