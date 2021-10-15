@@ -1,19 +1,44 @@
 package edu.epam.tasksecond.entity;
 
 import edu.epam.tasksecond.generator.GeneratorId;
+import edu.epam.tasksecond.observer.Observable;
+import edu.epam.tasksecond.observer.Observer;
+import edu.epam.tasksecond.observer.SphereEvent;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Custom sphere implementation.
+ * Custom sphere.
  */
-public class CustomSphere {
+public class CustomSphere implements Observable, Cloneable {
+    static final Logger logger = LogManager.getLogger();
     private long sphereId;
     private CustomPoint center;
     private double radius;
+    private List<Observer> observers = new ArrayList<>();
+
     public CustomSphere(CustomPoint center, double radius){
        this.center = center;
        this.radius = radius;
        this.sphereId = GeneratorId.setSphereID();
    }
+    public CustomSphere(long sphereId, CustomPoint center, double radius){
+        this.center = center;
+        this.radius = radius;
+        this.sphereId = sphereId;
+    }
+
+   public long getSphereId(){
+        return sphereId;
+   }
+    public void setSphereId(long sphereId){
+
+        this.sphereId = sphereId;
+    }
    public CustomPoint getCenter(){
 
         return  center;
@@ -21,7 +46,7 @@ public class CustomSphere {
 
     public void setCenter(CustomPoint center){
 
-        this.center = center;
+        this.center=center;
     }
    public double getRadius(){
 
@@ -31,9 +56,28 @@ public class CustomSphere {
     public void setRadius(double radius){
         if(radius > 0){
             this.radius = radius;
+            notifyObservers();
+        }else{
+            logger.log(Level.WARN,"Radius is less than zero. Radius is " + radius);
         }
     }
+    @Override
+    public void attach (Observer observer){
 
+        observers.add(observer);
+    }
+    @Override
+    public void detach (Observer observer){
+
+        observers.remove(observer);
+    }
+    @Override
+    public void notifyObservers(){
+        SphereEvent event = new SphereEvent(this);
+        if(!observers.isEmpty()){
+            observers.forEach(o-> o.update(event));
+        }
+    }
     @Override
     public boolean equals(Object o){
         if(this==o){
@@ -43,7 +87,7 @@ public class CustomSphere {
             return false;
         }
         CustomSphere sphere = (CustomSphere)o;
-        if(radius != sphere.radius){
+        if(radius != sphere.radius || sphereId != sphere.sphereId){
             return false;
         }
         if(center == null){
@@ -55,10 +99,15 @@ public class CustomSphere {
         }
         return true;
     }
+
     @Override
     public String toString(){
-
-        return "center: " + center + ", radius=" + radius;
+        final StringBuilder builder = new StringBuilder("Sphere{");
+        builder.append("sphereId=").append(sphereId);
+        builder.append(center);
+        builder.append(", radius=").append(radius);
+        builder.append('}');
+        return builder.toString();
     }
     @Override
     public int hashCode(){

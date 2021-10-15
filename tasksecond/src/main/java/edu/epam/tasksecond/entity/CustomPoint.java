@@ -1,8 +1,5 @@
 package edu.epam.tasksecond.entity;
 
-/**
- * Sphere points will produce sphere shapes.
- */
 public class CustomPoint {
     private double x;
     private double y;
@@ -12,11 +9,12 @@ public class CustomPoint {
         this.y = y;
         this.z = z;
     }
+
     public double getX(){
 
         return x;
     }
-    public void setX(){
+    public void setX(double x){
 
         this.x = x;
     }
@@ -24,7 +22,7 @@ public class CustomPoint {
 
         return y;
     }
-    public void setY(){
+    public void setY(double y){
 
         this.y = y;
     }
@@ -32,7 +30,7 @@ public class CustomPoint {
 
         return z;
     }
-    public void setZ(){
+    public void setZ(double z){
 
         this.z = z;
     }
@@ -50,8 +48,12 @@ public class CustomPoint {
     }
     @Override
     public String toString(){
-
-        return "x=" + x + ", y=" + y + ", z=" + z;
+        final StringBuilder builder = new StringBuilder("Point{");
+        builder.append("x=").append(x);
+        builder.append(", y=").append(y);
+        builder.append(", z=").append(z);
+        builder.append('}');
+        return builder.toString();
     }
     @Override
     public int hashCode(){

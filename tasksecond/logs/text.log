@@ -1,0 +1,25 @@
+2021-10-14 22:26:11.437 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=1.0}
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - 12.566370614359172
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - 4.1887902047863905
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=2.5}
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - 78.53981633974483
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - 65.44984694978736
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=2Point{x=4.0, y=6.0, z=6.0}, radius=3.0}
+2021-10-14 22:26:11.452 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=2.5}
+2021-10-14 22:30:19.890 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=1.0}
+2021-10-14 22:30:19.890 [main] INFO  epam.tasksecond.usermain.UserMain - 12.566370614359172
+2021-10-14 22:30:19.890 [main] INFO  epam.tasksecond.usermain.UserMain - 4.1887902047863905
+2021-10-14 22:30:19.890 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=2.5}
+2021-10-14 22:30:19.890 [main] INFO  epam.tasksecond.usermain.UserMain - 78.53981633974483
+2021-10-14 22:30:19.890 [main] INFO  epam.tasksecond.usermain.UserMain - 65.44984694978736
+2021-10-14 22:30:19.906 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=2Point{x=4.0, y=6.0, z=6.0}, radius=3.0}
+2021-10-14 22:30:19.906 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=2.5}
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - true
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=1.0}
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - 12.566370614359172
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - 4.1887902047863905
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=2.5}
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - 78.53981633974483
+2021-10-15 09:51:14.066 [main] INFO  epam.tasksecond.usermain.UserMain - 65.44984694978736
+2021-10-15 09:51:14.077 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=1Point{x=3.0, y=2.3, z=3.0}, radius=2.5}
+2021-10-15 09:51:14.077 [main] INFO  epam.tasksecond.usermain.UserMain - Sphere{sphereId=2Point{x=4.0, y=6.0, z=6.0}, radius=3.0}
