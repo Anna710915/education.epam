@@ -1,5 +1,10 @@
 package edu.epam.tasksecond.entity;
 
+/**
+ * Class {@code CustomPoint} contains coordinate fields and getter and
+ * setter methods. Override and implement the methods of the superclass
+ * {@code Object}: equals, hashCode, toString.
+ */
 public class CustomPoint {
     private double x;
     private double y;

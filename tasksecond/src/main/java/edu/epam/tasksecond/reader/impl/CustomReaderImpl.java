@@ -1,6 +1,7 @@
 package edu.epam.tasksecond.reader.impl;
 
 import edu.epam.tasksecond.exception.CustomException;
+import edu.epam.tasksecond.reader.CustomReader;
 import edu.epam.tasksecond.validator.CustomValidator;
 
 import java.io.File;
@@ -16,14 +17,8 @@ import java.util.stream.Stream;
 /**
  * Class {@code CustomReader} reads strings from file.
  */
-public class CustomReaderImpl {
-    /**
-     *
-     * @param filename is a file path.
-     * @return a list of strings.
-     * @throws CustomException if the file is not read or the path
-     * is incorrect.
-     */
+public class CustomReaderImpl implements CustomReader {
+    @Override
     public List<String> readFile (String filename) throws CustomException{
         ClassLoader loader = getClass().getClassLoader();
         URL resource = loader.getResource(filename);

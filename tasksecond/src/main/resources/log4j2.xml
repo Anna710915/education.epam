@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="INFO">
     <Properties>
-        <Property name="pattern_0">
+        <Property name="pattern_file">
             %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{4} - %msg%n
         </Property>
-        <Property name="pattern_1">
+        <Property name="pattern_console">
             %d{HH:mm:ss.SSS} [%t] %-5level %logger{1} - %msg%n
         </Property>
     </Properties>
     <Appenders>
-        <File name="TxtFile" fileName="logs/text.log" bufferedIO="true">
-            <PatternLayout pattern="${pattern_0}" />
-        </File>
+        <RollingFile name="FileRolling" filename="logs/log_roll.txt" append="true"
+                     filePattern="logs/${date:yyyy-MM-dd}/%d{yyyy-MM-dd_HH-mm}_%i.txt">
+            <PatternLayout pattern="${pattern_file}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="5 KB"/>
+            </Policies>
+            <DefautRolloverStrategy max="5"/>
+        </RollingFile>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="${pattern_1}" />
+            <PatternLayout pattern="${pattern_console}" />
         </Console>
     </Appenders>
     <Loggers>
         <Root level="INFO">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="TxtFile" />
+            <AppenderRef ref="FileRolling" />
         </Root>
     </Loggers>
 </Configuration>

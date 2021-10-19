@@ -1,7 +1,6 @@
 package edu.epam.tasksecond.usermain;
 
 import edu.epam.tasksecond.comparator.SphereFirstPointX;
-import edu.epam.tasksecond.comparator.SphereIdComparator;
 import edu.epam.tasksecond.converter.impl.CustomParserImpl;
 import edu.epam.tasksecond.entity.CustomPoint;
 import edu.epam.tasksecond.entity.CustomSphere;
@@ -10,7 +9,6 @@ import edu.epam.tasksecond.factory.impl.SphereFactoryImpl;
 import edu.epam.tasksecond.observer.impl.SphereObserver;
 import edu.epam.tasksecond.reader.impl.CustomReaderImpl;
 import edu.epam.tasksecond.repository.ShapeRepository;
-import edu.epam.tasksecond.repository.impl.VolumeSpecification;
 import edu.epam.tasksecond.server.impl.CustomActionSphere;
 import edu.epam.tasksecond.warehouse.Warehouse;
 import edu.epam.tasksecond.warehouse.impl.WarehouseEditorImpl;

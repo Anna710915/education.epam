@@ -3,19 +3,14 @@ package edu.epam.tasksecond.converter.impl;
 import edu.epam.tasksecond.converter.CustomParser;
 
 /**
- * Class {@code CustomParser} contains the method to convert strings
- * to array of numbers.
+ * Class {@code CustomParser} implements CustomParser interface and
+ * contains the method to convert strings to the array of numbers.
  * @author Anna Merkul
  */
 public class CustomParserImpl implements CustomParser {
     static final String REGEX_DELIMITER = "\\s+";
 
-    /**
-     *
-     * @param linePoint is a string, which contains coordinates
-     *                  and parameters of a shape.
-     * @return the array of numbers.
-     */
+    @Override
     public double[] parseLinePoint(String linePoint){
         linePoint = linePoint.trim();
         String[] pointShape = linePoint.split(REGEX_DELIMITER);

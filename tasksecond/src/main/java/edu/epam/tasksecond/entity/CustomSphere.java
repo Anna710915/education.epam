@@ -11,8 +11,12 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
- * Custom sphere.
+ * Class {@code CustomSphere} contains center and radius fields; getter and
+ * setter methods; have a list of observers;
+ * Override and implement the methods of the superclass
+ * {@code Object}: equals, hashCode, toString.
  */
 public class CustomSphere implements Observable, Cloneable {
     static final Logger logger = LogManager.getLogger();
@@ -26,12 +30,6 @@ public class CustomSphere implements Observable, Cloneable {
        this.radius = radius;
        this.sphereId = GeneratorId.setSphereID();
    }
-    public CustomSphere(long sphereId, CustomPoint center, double radius){
-        this.center = center;
-        this.radius = radius;
-        this.sphereId = sphereId;
-    }
-
    public long getSphereId(){
         return sphereId;
    }
@@ -99,7 +97,6 @@ public class CustomSphere implements Observable, Cloneable {
         }
         return true;
     }
-
     @Override
     public String toString(){
         final StringBuilder builder = new StringBuilder("Sphere{");

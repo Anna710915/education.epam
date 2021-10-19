@@ -13,6 +13,7 @@ public class ShapeRepository{
     private static ShapeRepository instance;
 
     private ShapeRepository(){
+
         item = new ArrayList<>();
     }
     public static ShapeRepository getInstance(){
@@ -22,34 +23,33 @@ public class ShapeRepository{
         return instance;
     }
     public boolean add(CustomSphere customSphere) {
+
         return item.add(customSphere);
     }
-
     public boolean addAll(Collection<? extends CustomSphere> c) {
+
         return item.addAll(c);
     }
-
     public boolean remove(CustomSphere customSphere) {
+
         return item.remove(customSphere);
     }
-
     public boolean removeAll(Collection<?> c) {
+
         return item.removeAll(c);
     }
-
     public CustomSphere get(int index) {
 
         return item.get(index);
     }
-
     public void set(int index, CustomSphere element) {
+
          item.set(index, element);
     }
-
     public List<CustomSphere> query(Specification specification){
 
         return item.stream().filter(o -> specification.specify(o))
-                .collect(Collectors.toList());
+                            .collect(Collectors.toList());
     }
     public List<CustomSphere> sort(Comparator<CustomSphere> comparator){
 
