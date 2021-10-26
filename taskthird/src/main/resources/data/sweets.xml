@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--1) All the elements used in this XML document are declared
+in the "https://www.example.com/candies" namespace.-->
+<!--2) Once you have the XML Schema Instance namespace available:
+you can use the schemaLocation attribute. This attribute has two values,
+separated by a space. The first value is the namespace to use.
+The second value is the location of the XML schema to use for that namespace-->
+<sweets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://www.example.com/sweets"
+         xsi:schemaLocation="https://www.example.com/sweets sweets.xsd">
+    <cookie id="ID-1" name="Hit" cookie-type="Chocolate">
+        <production>Somebody</production>
+        <production-date>2000-08-16</production-date>
+        <energy>440</energy>
+        <milk>10</milk>
+        <sugar>8</sugar>
+        <value>
+            <protein>14.5</protein>
+            <fat>15.0</fat>
+            <carbohydrate>14.0</carbohydrate>
+        </value>
+        <flour>wheat</flour>
+    </cookie>
+    <chocolate id="ID-2" name="Alyonka" chocolate-type="Milk">
+        <production>Kommunarka</production>
+        <production-date>1990-07-09</production-date>
+        <energy>380</energy>
+        <milk>5</milk>
+        <sugar>10</sugar>
+        <value>
+            <protein>13.4</protein>
+            <fat>12.7</fat>
+            <carbohydrate>10.8</carbohydrate>
+        </value>
+        <filling>not</filling>
+        <cocoa>20</cocoa>
+        <vanilla>10</vanilla>
+    </chocolate>
+</sweets>

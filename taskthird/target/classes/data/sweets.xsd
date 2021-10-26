@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--1) The elements and data types used in the schema -->
+<!--come from the "http://www.w3.org/2001/XMLSchema" namespace-->
+<!--2) The elements defined by this schema -->
+<!--come from the "https://www.example.com/candies" namespace-->
+<!--3) The default namespace is "https://www.example.com/candies"-->
+<!--4) Any elements used by the XML instance document which were -->
+<!--declared in this schema must be namespace qualified-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.example.com/sweets"
+        xmlns:c="https://www.example.com/sweets"
+        elementFormDefault="qualified">
+    <element name="sweets">
+        <complexType>
+            <sequence>
+                <element ref="c:Sweets" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="SweetsType">
+        <sequence>
+            <element name="production" type="string"></element>
+            <element name="production-date" type="date"></element>
+            <element name="energy" type="positiveInteger"></element>
+            <element name="milk" type="positiveInteger"></element>
+            <element name="sugar" type="positiveInteger"></element>
+            <element name="value" type="c:valueType"></element>
+        </sequence>
+        <attribute name="id" type="c:SweetsID" use="required"></attribute>
+        <attribute name="name" type="string" use="required"></attribute>
+    </complexType>
+    <complexType name="ChocolateType">
+        <complexContent>
+            <extension base="c:SweetsType">
+                <sequence>
+                    <element name="filling" type="string"></element>
+                    <element name="cocoa" type="positiveInteger"></element>
+                    <element name="vanilla" type="positiveInteger"></element>
+                </sequence>
+                <attribute name="chocolate-type" use="optional" default="Milk">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="Milk"></enumeration>
+                            <enumeration value="White"></enumeration>
+                            <enumeration value="Black"></enumeration>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="CookieType">
+        <complexContent>
+            <extension base="c:SweetsType">
+                <sequence>
+                    <element name="flour" type="string"></element>
+                </sequence>
+                <attribute name="cookie-type" use="required">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="Oatmeal"></enumeration>
+                            <enumeration value="Chocolate"></enumeration>
+                            <enumeration value="Ginger"></enumeration>
+                            <enumeration value="Cracker"></enumeration>
+                            <enumeration value="Gingerbread"></enumeration>
+                            <enumeration value="Cottage cheese"></enumeration>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="valueType">
+        <sequence>
+            <element name="protein">
+                <simpleType>
+                    <restriction base="double">
+                        <minInclusive value="0"></minInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="fat">
+                <simpleType>
+                    <restriction base="double">
+                        <minInclusive value="0"></minInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="carbohydrate">
+                <simpleType>
+                    <restriction base="double">
+                        <minInclusive value="0"></minInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    <simpleType name="SweetsID">
+        <restriction base="ID">
+            <pattern value="ID-\d{1,6}"></pattern>
+        </restriction>
+    </simpleType>
+    <element name="Sweets" type="c:SweetsType" abstract="true"></element>
+    <element name="chocolate" type="c:ChocolateType" substitutionGroup="c:Sweets"></element>
+    <element name="cookie" type="c:CookieType" substitutionGroup="c:Sweets"></element>
+</schema>
