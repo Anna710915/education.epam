@@ -2,7 +2,7 @@ package by.epam.taskthird.entity;
 
 import java.time.LocalDate;
 
-public class Chocolate extends Sweets{
+public class Chocolate extends AbstractSweets {
     String chocolateType;
     String filling;
     int cocoa;

@@ -2,7 +2,7 @@ package by.epam.taskthird.entity;
 
 import java.time.LocalDate;
 
-public class Cookie extends Sweets{
+public class Cookie extends AbstractSweets {
     String cookieType;
     String flour;
     public Cookie(){}

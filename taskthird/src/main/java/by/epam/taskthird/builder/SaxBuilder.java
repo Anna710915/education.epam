@@ -1,6 +1,6 @@
 package by.epam.taskthird.builder;
 
-import by.epam.taskthird.entity.Sweets;
+import by.epam.taskthird.entity.AbstractSweets;
 import by.epam.taskthird.exception.CustomException;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
@@ -11,7 +11,7 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 import java.util.Set;
 
-public class SaxBuilder extends SweetsBuilder{
+public class SaxBuilder extends AbstractSweetsBuilder {
     private XMLReader reader;
     private SweetsHandler handler;
     public SaxBuilder() throws CustomException{
@@ -26,8 +26,7 @@ public class SaxBuilder extends SweetsBuilder{
         reader.setContentHandler(handler);
         reader.setErrorHandler(new SweetsErrorHandler());
     }
-    public SaxBuilder(Set<Sweets> sweets){
-
+    public SaxBuilder(Set<AbstractSweets> sweets){
         super(sweets);
     }
     @Override

@@ -13,3 +13,76 @@
 2021-10-26 01:01:42 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
 , Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
 ]
+2021-10-26 18:52:03 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+, Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 12:08:37 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+, Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 12:09:20 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+, Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 13:09:54 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:11:01 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:11:14 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:13:16 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:13:24 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+, Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 13:13:34 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:16:06 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:18:18 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:40:07 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:40:34 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:41:31 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:42:59 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+, Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 13:46:42 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+, Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+]
+2021-10-27 13:46:52 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:47:42 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:52:06 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:53:12 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:53:40 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:55:34 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 13:56:25 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:24:29 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:36:20 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:38:11 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:38:56 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:41:48 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:42:23 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:43:42 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:44:02 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:45:13 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:45:21 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:45:31 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+, Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 22:47:39 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:49:22 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:49:51 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:50:02 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:55:14 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 22:56:12 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 23:02:02 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+]
+2021-10-27 23:03:23 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 23:14:01 [main] INFO  by.epam.taskthird.main.User - []
+2021-10-27 23:18:56 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+, Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+]
+2021-10-27 23:20:03 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+, Sweets{id=ID-3, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+, Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+]
+2021-10-27 23:25:43 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+, Sweets{id=ID-3, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=Chocolate, flour=wheat}
+, Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=Milk, filling=not, cocoa=20, vanilla=10}
+]
+2021-10-28 00:56:51 [main] INFO  by.epam.taskthird.main.User - [Sweets{id=ID-1, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=null, flour=wheat}
+, Sweets{id=ID-3, name=Hit, production=Somebody, productionDate=2000-08-16, energy=440, sugar=8, milk=10, value=SweetsValue{ protein=14.5, fat=15.0, carbohydrate=14.0}}Cookie{cookieType=null, flour=wheat}
+, Sweets{id=ID-2, name=Alyonka, production=Kommunarka, productionDate=1990-07-09, energy=380, sugar=10, milk=5, value=SweetsValue{ protein=13.4, fat=12.7, carbohydrate=10.8}}Chocolate{chocolateType=null, filling=not, cocoa=20, vanilla=10}
+]

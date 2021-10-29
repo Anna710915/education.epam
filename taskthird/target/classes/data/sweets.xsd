@@ -7,10 +7,10 @@
 <!--4) Any elements used by the XML instance document which were -->
 <!--declared in this schema must be namespace qualified-->
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="https://www.example.com/abstractSweets"
-        xmlns:c="https://www.example.com/abstractSweets"
+        targetNamespace="https://www.example.com/sweets"
+        xmlns:c="https://www.example.com/sweets"
         elementFormDefault="qualified">
-    <element name="abstractSweets">
+    <element name="sweets">
         <complexType>
             <sequence>
                 <element ref="c:Sweets" minOccurs="1" maxOccurs="unbounded"/>

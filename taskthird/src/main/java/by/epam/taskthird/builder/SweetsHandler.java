@@ -1,8 +1,8 @@
 package by.epam.taskthird.builder;
 
+import by.epam.taskthird.entity.AbstractSweets;
 import by.epam.taskthird.entity.Chocolate;
 import by.epam.taskthird.entity.Cookie;
-import by.epam.taskthird.entity.Sweets;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -15,16 +15,16 @@ import java.util.Set;
 public class SweetsHandler extends DefaultHandler {
     private static final String DELIMITER_DASH = "-";
     private static final String DELIMITER_UNDERSCORE = "_";
-    private Set<Sweets> sweets;
-    private Sweets current;
+    private Set<AbstractSweets> sweets;
+    private AbstractSweets current;
     private SweetsXmlTag currentXmlTag;
     private EnumSet<SweetsXmlTag> withText;
     public  SweetsHandler(){
-        sweets = new HashSet<Sweets>();
+        sweets = new HashSet<AbstractSweets>();
         withText = EnumSet.range(SweetsXmlTag.PRODUCTION,SweetsXmlTag.VANILLA);
     }
 
-    public Set<Sweets> getSweets() {
+    public Set<AbstractSweets> getSweets() {
         return sweets;
     }
 

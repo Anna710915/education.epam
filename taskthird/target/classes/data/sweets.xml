@@ -5,9 +5,9 @@ in the "https://www.example.com/candies" namespace.-->
 you can use the schemaLocation attribute. This attribute has two values,
 separated by a space. The first value is the namespace to use.
 The second value is the location of the XML schema to use for that namespace-->
-<abstractSweets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="https://www.example.com/abstractSweets"
-         xsi:schemaLocation="https://www.example.com/abstractSweets abstractSweets.xsd">
+<sweets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://www.example.com/sweets"
+         xsi:schemaLocation="https://www.example.com/sweets sweets.xsd">
     <cookie id="ID-1" name="Hit" cookie-type="Chocolate">
         <production>Somebody</production>
         <production-date>2000-08-16</production-date>
@@ -49,4 +49,4 @@ The second value is the location of the XML schema to use for that namespace-->
         </value>
         <flour>wheat</flour>
     </cookie>
-</abstractSweets>
+</sweets>
