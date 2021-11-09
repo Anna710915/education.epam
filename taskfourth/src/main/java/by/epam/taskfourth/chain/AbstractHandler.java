@@ -1,10 +1,16 @@
 package by.epam.taskfourth.chain;
 
-import by.epam.taskfourth.composite.Component;
+import by.epam.taskfourth.composite.Composite;
 
-import java.util.Iterator;
-import java.util.List;
-
+/**
+ * Abstract class {@code AbstractHandler} contains only one method that
+ * will override by subclasses.
+ */
 public abstract class AbstractHandler {
-    public abstract void handlerRequest(Component component, String element);
+    /**
+     * This method are overridden by subclasses to split the text into parts.
+     * @param composite the object where stores parts of a text
+     * @param element the string that has some information for storing
+     */
+    public abstract void handlerRequest(Composite composite, String element);
 }

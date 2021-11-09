@@ -1,19 +1,22 @@
 package by.epam.taskfourth.chain;
 
-import by.epam.taskfourth.composite.Component;
-import by.epam.taskfourth.composite.ComponentImpl;
+import by.epam.taskfourth.composite.Composite;
+import by.epam.taskfourth.composite.CompositeImpl;
+import by.epam.taskfourth.composite.TypeComponent;
 
-
+/**
+ * Class {@code ParagraphHandler} splits a text into paragraphs.
+ */
 public class ParagraphHandler extends AbstractHandler{
-    static final String DELIMITER_PARAGRAPH = "\\s{4}";
+    static final String DELIMITER_PARAGRAPH = "\t";
     AbstractHandler handler = new SentenceHandler();
     @Override
-    public void handlerRequest(Component component, String text) {
+    public void handlerRequest(Composite composite, String text) {
         text=text.trim();
         String[] paragraphs = text.split(DELIMITER_PARAGRAPH);
         for(String paragraphText:paragraphs) {
-            Component paragraph = new ComponentImpl();
-            component.add(paragraph);
+            Composite paragraph = new CompositeImpl(TypeComponent.PARAGRAPH);
+            composite.add(paragraph);
             handler.handlerRequest(paragraph,paragraphText);
         }
 

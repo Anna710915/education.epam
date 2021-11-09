@@ -14,8 +14,18 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Class {@code CustomReader} reads information from file.
+ */
 public class CustomReader {
     private static final Logger logger = LogManager.getLogger();
+
+    /**
+     *
+     * @param filename is a name of file
+     * @return Optional
+     * @throws CustomException if file is not read
+     */
     public Optional<List<String>> readFile(String filename) throws CustomException {
         String path = findPath(filename);
         try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
@@ -29,9 +39,19 @@ public class CustomReader {
             throw new CustomException("File is not read!" + filename, e);
         }
     }
-    private String findPath(String filename){
+
+    /**
+     *
+     * @param filename is a name of file
+     * @return a file path.
+     * @throws CustomException if path is not found
+     */
+    private String findPath(String filename) throws CustomException{
         ClassLoader loader = getClass().getClassLoader();
         URL resource = loader.getResource(filename);
+        if(resource == null){
+            throw new CustomException("File is not found!" + filename);
+        }
         String path = resource.getPath();
         return path;
     }
