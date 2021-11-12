@@ -17,7 +17,7 @@ public class SymbolHandler extends AbstractHandler{
         Matcher matcher = pattern.matcher(wordText);
         while (matcher.find()){
             for(int i = 0;i< matcher.groupCount()+1;i++){
-                LeafSymbol symbol = new LeafSymbol(matcher.group(i), TypeComponent.SYMBOL);
+                LeafSymbol symbol = new LeafSymbol(matcher.group(i).charAt(i), TypeComponent.SYMBOL);
                 word.add(symbol);
             }
         }

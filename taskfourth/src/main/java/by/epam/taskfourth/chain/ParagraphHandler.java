@@ -8,7 +8,7 @@ import by.epam.taskfourth.composite.TypeComponent;
  * Class {@code ParagraphHandler} splits a text into paragraphs.
  */
 public class ParagraphHandler extends AbstractHandler{
-    static final String DELIMITER_PARAGRAPH = "\t";
+    static final String DELIMITER_PARAGRAPH = "\\s{4}|\t";
     AbstractHandler handler = new SentenceHandler();
     @Override
     public void handlerRequest(Composite composite, String text) {

@@ -9,13 +9,14 @@ import java.util.List;
 public class LeafSymbol implements Composite {
     private static final Logger logger = LogManager.getLogger();
     private TypeComponent type;
-    private String symbol;
+    private char symbol;
 
-    public LeafSymbol(String symbol){
+    public LeafSymbol(char symbol){
+
         this.symbol = symbol;
     }
 
-    public LeafSymbol(String symbol, TypeComponent type){
+    public LeafSymbol(char symbol, TypeComponent type){
         this.symbol = symbol;
         this.type = type;
     }
@@ -44,14 +45,14 @@ public class LeafSymbol implements Composite {
 
     @Override
     public String toString(){
+        return Character.toString(symbol);
+    }
+
+    public char getSymbol() {
         return symbol;
     }
 
-    public String getSymbol() {
-        return symbol;
-    }
-
-    public void setSymbol(String symbol) {
+    public void setSymbol(char symbol) {
         this.symbol = symbol;
     }
 }

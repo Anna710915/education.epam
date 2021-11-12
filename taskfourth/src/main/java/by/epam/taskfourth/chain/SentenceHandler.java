@@ -10,7 +10,8 @@ import java.util.regex.Pattern;
  * Class {@code SentenceHandler} splits a paragraph into sentences.
  */
 public class SentenceHandler extends AbstractHandler{
-    static final String PATTERN_SENTENCE = "(?:<(?:(?:[a-z]+\\s(?:[^>=]|='[^']*'|=\"[^\"]*\"|=[^'\"\\s]*)*\"\\s?\\/?|\\/[a-z]+)>)|(?:(?!<)(?:[^.?!]|[.?!](?=\\S)))*)+[.?!]";
+    //static final String PATTERN_SENTENCE = "(?:<(?:(?:[a-z]+\\s(?:[^>=]|='[^']*'|=\"[^\"]*\"|=[^'\"\\s]*)*\"\\s?\\/?|\\/[a-z]+)>)|(?:(?!<)(?:[^.?!]|[.?!](?=\\S)))*)+[.?!]";
+    static final String PATTERN_SENTENCE = ".+?[\\.?!](?=\\s|$)";
     private AbstractHandler handler = new LexemeHandler();
     @Override
     public void handlerRequest(Composite paragraph, String paragraphText) {

@@ -24,7 +24,7 @@ public class WordHandler extends AbstractHandler{
                     lexeme.add(word);
                     handler.handlerRequest(word,matcher.group(i));
                 }else if(matcher.group(i).matches(PATTERN_PUNCT)){
-                    LeafSymbol punct = new LeafSymbol(matcher.group(i), TypeComponent.PUNCT);
+                    LeafSymbol punct = new LeafSymbol(matcher.group(i).charAt(i), TypeComponent.PUNCT);
                     lexeme.add(punct);
                 }
             }

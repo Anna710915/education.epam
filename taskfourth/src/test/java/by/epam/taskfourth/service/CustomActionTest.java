@@ -6,9 +6,7 @@ import by.epam.taskfourth.comparator.ParagraphComparator;
 import by.epam.taskfourth.composite.Composite;
 import by.epam.taskfourth.composite.CompositeImpl;
 import by.epam.taskfourth.composite.TypeComponent;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.List;
 
@@ -23,8 +21,11 @@ public class CustomActionTest {
     @BeforeClass
     public void createAction(){
         action = new CustomAction();
-        composite = new CompositeImpl(TypeComponent.TEXT);
         handler = new TextHandler();
+    }
+    @BeforeMethod
+    public void createComposite(){
+        composite = new CompositeImpl(TypeComponent.TEXT);
     }
     @Test
     public void sortParagraphsTest(){
@@ -55,9 +56,13 @@ public class CustomActionTest {
         String actual = composite.toString();
         assertEquals(actual,expected);
     }
+    @AfterMethod
+    public void closeComposite(){
+        composite = null;
+    }
     @AfterClass
     public void closeAction(){
         action = null;
-        composite = null;
+        handler = null;
     }
 }

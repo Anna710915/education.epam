@@ -37,6 +37,7 @@ public class UserMain {
                 Composite composite = new CompositeImpl(TypeComponent.TEXT);
                 handler.handlerRequest(composite,text);
                 //logger.info(composite.toString());
+                logger.info(composite.toString());
                 CustomAction action = new CustomAction();
                 List<Composite> text1 = action.sortParagraphs(composite,new ParagraphComparator());
                 logger.info(text1.toString());

@@ -176,7 +176,7 @@ public class CustomAction {
             if(element.getTypeComponent()==TypeComponent.SYMBOL ||
                     element.getTypeComponent()==TypeComponent.PUNCT){
                 LeafSymbol symbol = (LeafSymbol)element;
-                if (symbol.getSymbol().matches(SYMBOL_VOWEL)){
+                if (Character.toString(symbol.getSymbol()).matches(SYMBOL_VOWEL)){
                     count++;
                 }
             }else{
@@ -198,7 +198,7 @@ public class CustomAction {
             if(element.getTypeComponent()==TypeComponent.SYMBOL ||
                     element.getTypeComponent()==TypeComponent.PUNCT){
                 LeafSymbol symbol = (LeafSymbol)element;
-                if (!symbol.getSymbol().matches(SYMBOL_VOWEL) &&
+                if (!Character.toString(symbol.getSymbol()).matches(SYMBOL_VOWEL) &&
                 symbol.getTypeComponent()!=TypeComponent.PUNCT){
                     count++;
                 }
