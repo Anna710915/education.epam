@@ -16,8 +16,8 @@ import java.util.stream.Collectors;
 public class CustomReader {
     static final Logger logger = LogManager.getLogger();
     public Optional<List<String>> readFiles(String filename) throws CustomException{
-        // String path = findFilePath(filename);
-        try(BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        String path = findFilePath(filename);
+        try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
             List<String> lines = reader.lines()
                     .collect(Collectors.toList());
             Optional<List<String>> optional = lines.size() != 0 ? Optional.of(lines) : Optional.empty();

@@ -20,7 +20,7 @@ import java.util.concurrent.Future;
 public class UserMain {
     static final Logger logger = LogManager.getLogger();
     public static void main(String ...args) {
-        String filename = "src\\main\\resources\\lorry.txt";
+        String filename = "data/lorry.txt";
         CustomReader reader = new CustomReader();
         CustomParser parser = new CustomParser();
         Timer timer = new Timer(true);

@@ -26,7 +26,7 @@ public class LogisticBase {
         init();
     }
     private void init(){
-        String filename = "src\\main\\resources\\terminal.txt";
+        String filename = "data/terminal.txt";
         CustomReader reader = new CustomReader();
         try {
             Optional<List<String>> optionalTerminals = reader.readFiles(filename);
