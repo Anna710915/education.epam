@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67c8da8c-d050-4911-a19b-53e5d859e34b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="215xfiFEGd1jf6gZqEBBXFiDsnc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../taskfourth" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\fifthtask\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\fifthtask\src\main\resources" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\fifthtask\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.UserMain">
+    <configuration name="A (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.taskfifth.entity.A" />
+      <module name="fifthtask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.taskfifth.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.taskfifth.main.A" />
+      <module name="fifthtask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.taskfifth.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.taskfifth.main.Main" />
+      <module name="fifthtask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.taskfifth.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.taskfifth.main.UserMain" />
+      <module name="fifthtask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.taskfifth.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserMain" />
+        <item itemvalue="Application.A (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.A" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67c8da8c-d050-4911-a19b-53e5d859e34b" name="Changes" comment="" />
+      <created>1637244858875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637244858875</updated>
+      <workItem from="1637244861375" duration="11512000" />
+      <workItem from="1637263859908" duration="8032000" />
+      <workItem from="1637305754376" duration="167000" />
+      <workItem from="1637310071169" duration="2088000" />
+      <workItem from="1637313761793" duration="346000" />
+      <workItem from="1637314137728" duration="5197000" />
+      <workItem from="1637388990449" duration="5573000" />
+      <workItem from="1637395784393" duration="113000" />
+      <workItem from="1637400505788" duration="158000" />
+      <workItem from="1637403474447" duration="1835000" />
+      <workItem from="1637408977369" duration="2312000" />
+      <workItem from="1637442659186" duration="67000" />
+      <workItem from="1637527029397" duration="99000" />
+      <workItem from="1637609330540" duration="8000" />
+      <workItem from="1637652292813" duration="70000" />
+      <workItem from="1637652577160" duration="736000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

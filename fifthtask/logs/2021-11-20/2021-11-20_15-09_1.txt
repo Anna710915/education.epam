@@ -1,0 +1,144 @@
+2021-11-20 15:01:38 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:39 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:39 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:39 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:39 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:39 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:40 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:40 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:40 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:40 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:40 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:41 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:41 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:41 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:41 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:41 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:42 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:42 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:42 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:42 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:42 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:43 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:43 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:43 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:43 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:43 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:44 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:44 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:44 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:44 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:44 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:01:45 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@2a047a86
+2021-11-20 15:01:45 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@75cef3a0
+2021-11-20 15:01:45 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@3306c860
+2021-11-20 15:01:45 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@f79101f
+2021-11-20 15:01:45 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - by.epam.taskfifth.entity.Terminal@6209b3c
+2021-11-20 15:08:47 [main] DEBUG by.epam.taskfifth.reader.CustomReader - Optional[[id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]]
+2021-11-20 15:08:47 [pool-2-thread-2] DEBUG by.epam.taskfifth.reader.CustomReader - Optional[[id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]]
+2021-11-20 15:08:47 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-20 15:08:47 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-20 15:08:47 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-20 15:08:47 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-20 15:08:47 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-20 15:08:47 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-20 15:08:47 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1800 is serviced by terminal and spoiling products are true
+2021-11-20 15:08:47 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1600 is serviced by terminal and spoiling products are false
+2021-11-20 15:08:47 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-20 15:08:47 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-20 15:08:47 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1700 is serviced by terminal and spoiling products are true
+2021-11-20 15:08:47 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-20 15:08:47 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-20 15:08:47 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-20 15:08:47 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-20 15:08:47 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.Terminal - Terminal5has served a lorry 1800 and spoiling products are true
+2021-11-20 15:08:47 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1100 and spoiling products are false
+2021-11-20 15:08:47 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1600 and spoiling products are false
+2021-11-20 15:08:47 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal4has served a lorry 1000 and spoiling products are true
+2021-11-20 15:08:47 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 1700 and spoiling products are true
+2021-11-20 15:08:47 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 5
+2021-11-20 15:08:47 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:48 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:49 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:50 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-20 15:08:50 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:50 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:51 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:51 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:52 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:52 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:53 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-20 15:08:53 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:53 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:53 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:54 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:54 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:54 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:55 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:55 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:55 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:56 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-20 15:08:56 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:56 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:56 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:56 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:57 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:57 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:57 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:57 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:58 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:58 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:58 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:58 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:59 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-20 15:08:59 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 4
+2021-11-20 15:08:59 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 1
+2021-11-20 15:08:59 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:59 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:08:59 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:59 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:08:59 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:00 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:00 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:00 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:09:00 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:09:00 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:01 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:01 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:01 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:09:01 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 70
+2021-11-20 15:09:01 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:02 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1400 is serviced by terminal and spoiling products are true
+2021-11-20 15:09:02 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-20 15:09:02 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-20 15:09:02 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - The rest is 40
+2021-11-20 15:09:02 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal4has served a lorry 1300 and spoiling products are false
+2021-11-20 15:09:02 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-20 15:09:02 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1900 is serviced by terminal and spoiling products are false
+2021-11-20 15:09:02 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-20 15:09:02 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 1900 and spoiling products are false
+2021-11-20 15:09:02 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-20 15:09:02 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1400 and spoiling products are true
+2021-11-20 15:09:02 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-20 15:09:02 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1500 is serviced by terminal and spoiling products are false
+2021-11-20 15:09:02 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal5has served a lorry 1200 and spoiling products are true
+2021-11-20 15:09:02 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - The rest is 40
+2021-11-20 15:09:02 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1500 and spoiling products are false
+2021-11-20 15:09:02 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:03 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:04 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:05 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-20 15:09:05 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:05 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:06 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:06 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:07 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:07 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:08 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-20 15:09:08 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:08 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:08 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:09 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40
+2021-11-20 15:09:09 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:09 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 50
+2021-11-20 15:09:10 [Timer-0] INFO  by.epam.taskfifth.entity.LogisticBase - 40

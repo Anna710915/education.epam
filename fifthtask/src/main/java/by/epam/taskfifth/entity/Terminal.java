@@ -8,11 +8,22 @@ import java.util.concurrent.TimeUnit;
 
 public class Terminal {
     static final Logger logger = LogManager.getLogger();
-    private static long i = 1;
+    private static final int MAX_SIZE = 100;
     private final long terminalId;
-    public Terminal(){
-        this.terminalId = i;
-        i++;
+    private int size;
+    public Terminal(long terminalId, int size){
+        this.terminalId = terminalId;
+        this.size = size;
+    }
+    public int getMaxSize(){
+        return MAX_SIZE;
+    }
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 
     public long getTerminalId() {
@@ -20,19 +31,14 @@ public class Terminal {
     }
     public void serveLorry(Lorry lorry){
         try{
-            TimeUnit.SECONDS.sleep((int)Math.random()*10+1);
+            size = lorry.isUpload() ? size - lorry.getProducts() : size + lorry.getProducts();
+            logger.log(Level.INFO, "The rest is " + size);
+            TimeUnit.SECONDS.sleep((int)Math.random()*10);
         }catch(InterruptedException e){
             logger.log(Level.ERROR,"Thread was interrupted while sleeping",e);
             Thread.currentThread().interrupt();
         }
         logger.info("Terminal"+getTerminalId()+"has served a lorry "+lorry.getLorryId()+
                 " and spoiling products are " + lorry.isSpoilingProduct());
-    }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Terminal)) return false;
-        Terminal terminal = (Terminal) o;
-        return getTerminalId() == terminal.getTerminalId();
     }
 }

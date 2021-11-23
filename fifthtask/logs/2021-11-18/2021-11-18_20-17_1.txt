@@ -1,0 +1,123 @@
+2021-11-18 20:06:40 [Thread-0] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:06:40 [Thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:06:40 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 6 is serviced by terminal and spoiling products are true
+2021-11-18 20:06:40 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 5 is serviced by terminal and spoiling products are false
+2021-11-18 20:06:40 [Thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 2and spoiling products are true
+2021-11-18 20:06:40 [Thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:06:40 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 3 is serviced by terminal and spoiling products are false
+2021-11-18 20:06:41 [Thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 5and spoiling products are false
+2021-11-18 20:06:41 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:06:41 [Thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 6and spoiling products are true
+2021-11-18 20:06:41 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:06:41 [Thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 3and spoiling products are false
+2021-11-18 20:06:41 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:07:12 [Thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 4 is serviced by terminal and spoiling products are false
+2021-11-18 20:07:12 [Thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:07:12 [Thread-0] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1 is serviced by terminal and spoiling products are false
+2021-11-18 20:07:12 [Thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 2 is serviced by terminal and spoiling products are true
+2021-11-18 20:07:12 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-18 20:07:12 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:07:12 [Thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-18 20:07:12 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:07:13 [Thread-0] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1and spoiling products are false
+2021-11-18 20:07:13 [Thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 4and spoiling products are false
+2021-11-18 20:07:13 [Thread-0] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:07:13 [Thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:07:13 [Thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 8 is serviced by terminal and spoiling products are true
+2021-11-18 20:07:13 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 6 is serviced by terminal and spoiling products are true
+2021-11-18 20:07:13 [Thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 2and spoiling products are true
+2021-11-18 20:07:13 [Thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:07:13 [Thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 7 is serviced by terminal and spoiling products are false
+2021-11-18 20:07:14 [Thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 6and spoiling products are true
+2021-11-18 20:07:14 [Thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 7and spoiling products are false
+2021-11-18 20:07:14 [Thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:07:14 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 3 is serviced by terminal and spoiling products are false
+2021-11-18 20:07:14 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:07:14 [Thread-7] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 8and spoiling products are true
+2021-11-18 20:07:14 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 5 is serviced by terminal and spoiling products are false
+2021-11-18 20:07:14 [Thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:07:15 [Thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 3and spoiling products are false
+2021-11-18 20:07:15 [Thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 5and spoiling products are false
+2021-11-18 20:07:15 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:07:15 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:09:17 [Thread-0] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1 is serviced by terminal and spoiling products are false
+2021-11-18 20:09:17 [Thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:09:17 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 3 is serviced by terminal and spoiling products are false
+2021-11-18 20:09:17 [Thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 2 is serviced by terminal and spoiling products are true
+2021-11-18 20:09:17 [Thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:09:17 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:09:17 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-18 20:09:17 [Thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-18 20:09:18 [Thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 3and spoiling products are false
+2021-11-18 20:09:18 [Thread-0] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1and spoiling products are false
+2021-11-18 20:09:18 [Thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 2and spoiling products are true
+2021-11-18 20:09:18 [Thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:09:18 [Thread-0] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:09:18 [Thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:09:18 [Thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 8 is serviced by terminal and spoiling products are true
+2021-11-18 20:09:18 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 6 is serviced by terminal and spoiling products are true
+2021-11-18 20:09:18 [Thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 4 is serviced by terminal and spoiling products are false
+2021-11-18 20:09:19 [Thread-7] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 8and spoiling products are true
+2021-11-18 20:09:19 [Thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 4and spoiling products are false
+2021-11-18 20:09:19 [Thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:09:19 [Thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 6and spoiling products are true
+2021-11-18 20:09:19 [Thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:09:19 [Thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 7 is serviced by terminal and spoiling products are false
+2021-11-18 20:09:19 [Thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:09:19 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 5 is serviced by terminal and spoiling products are false
+2021-11-18 20:09:20 [Thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 7and spoiling products are false
+2021-11-18 20:09:20 [Thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:09:20 [Thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 5and spoiling products are false
+2021-11-18 20:09:20 [Thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:17:07 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:08 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1 and spoiling products are false
+2021-11-18 20:17:08 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:17:08 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 2 is serviced by terminal and spoiling products are true
+2021-11-18 20:17:09 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 2 and spoiling products are true
+2021-11-18 20:17:09 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:17:09 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 3 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:10 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 3 and spoiling products are false
+2021-11-18 20:17:10 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:17:10 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 4 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:11 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 4 and spoiling products are false
+2021-11-18 20:17:11 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:17:11 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 5 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:12 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 5 and spoiling products are false
+2021-11-18 20:17:12 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:17:12 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 6 is serviced by terminal and spoiling products are true
+2021-11-18 20:17:13 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 6 and spoiling products are true
+2021-11-18 20:17:13 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:17:13 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 7 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:14 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 7 and spoiling products are false
+2021-11-18 20:17:14 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:17:14 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 8 is serviced by terminal and spoiling products are true
+2021-11-18 20:17:15 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 8 and spoiling products are true
+2021-11-18 20:17:15 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:17:40 [pool-1-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 8 is serviced by terminal and spoiling products are true
+2021-11-18 20:17:40 [pool-1-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:17:40 [pool-1-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 6 is serviced by terminal and spoiling products are true
+2021-11-18 20:17:40 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:40 [pool-1-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:17:40 [pool-1-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:17:40 [pool-1-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-18 20:17:40 [pool-1-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has not spoiling products
+2021-11-18 20:17:41 [pool-1-thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 6 and spoiling products are true
+2021-11-18 20:17:41 [pool-1-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:17:41 [pool-1-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 2 is serviced by terminal and spoiling products are true
+2021-11-18 20:17:41 [pool-1-thread-8] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 8 and spoiling products are true
+2021-11-18 20:17:41 [pool-1-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:17:41 [pool-1-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 4 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:41 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1 and spoiling products are false
+2021-11-18 20:17:41 [pool-1-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:17:41 [pool-1-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 5 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:42 [pool-1-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 2 and spoiling products are true
+2021-11-18 20:17:42 [pool-1-thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 4 and spoiling products are false
+2021-11-18 20:17:42 [pool-1-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:17:42 [pool-1-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-18 20:17:42 [pool-1-thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 5 and spoiling products are false
+2021-11-18 20:17:42 [pool-1-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-18 20:17:42 [pool-1-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 3 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:42 [pool-1-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 7 is serviced by terminal and spoiling products are false
+2021-11-18 20:17:43 [pool-1-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 3 and spoiling products are false
+2021-11-18 20:17:43 [pool-1-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-18 20:17:43 [pool-1-thread-7] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 7 and spoiling products are false
