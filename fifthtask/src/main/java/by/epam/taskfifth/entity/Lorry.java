@@ -67,9 +67,31 @@ public class Lorry implements Callable<String> {
             terminal = base.getAccessToTerminal(this);
             infoTerminal = String.valueOf(terminal.getTerminalId());
             terminal.serveLorry(this);
+            return "Lorry: "+this.getLorryId() + " Terminal: " +infoTerminal;
         }finally {
             base.releaseTerminal(terminal);
         }
-        return "Lorry: "+this.getLorryId() + " Terminal: " +infoTerminal;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Lorry lorry = (Lorry) o;
+        if (lorryId != lorry.lorryId) return false;
+        if (spoilingProduct != lorry.spoilingProduct) return false;
+        if (upload != lorry.upload) return false;
+        if (size != lorry.size) return false;
+        return products == lorry.products;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (lorryId ^ (lorryId >>> 32));
+        result = 31 * result + (spoilingProduct ? 1 : 0);
+        result = 31 * result + (upload ? 1 : 0);
+        result = 31 * result + size;
+        result = 31 * result + products;
+        return result;
     }
 }

@@ -1,0 +1,115 @@
+2021-11-26 14:05:45 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-26 14:05:45 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1000 and spoiling products are true
+2021-11-26 14:06:06 [Timer-0] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:06:25 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:06:54 [Timer-0] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:07:01 [main] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/lorr.txt
+2021-11-26 14:07:14 [main] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/lorr.txt
+2021-11-26 14:07:14 [Timer-0] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:07:33 [Timer-0] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:07:33 [main] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/lorr.txt
+2021-11-26 14:09:04 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:09:04 [Timer-0] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [Timer-0] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:09:57 [main] ERROR by.epam.taskfifth.main.UserMain - ExecutionException 
+java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "by.epam.taskfifth.entity.LogisticBase.releaseTerminal(by.epam.taskfifth.entity.Terminal)" because "base" is null
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:38) [classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "by.epam.taskfifth.entity.LogisticBase.releaseTerminal(by.epam.taskfifth.entity.Terminal)" because "base" is null
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:71) ~[classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2021-11-26 14:10:49 [Timer-0] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [main] ERROR by.epam.taskfifth.main.UserMain - ExecutionException 
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:10:49 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:11:08 [Timer-0] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:11:08 [main] ERROR by.epam.taskfifth.main.UserMain - ExecutionException 
+java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "by.epam.taskfifth.entity.LogisticBase.releaseTerminal(by.epam.taskfifth.entity.Terminal)" because "base" is null
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:38) [classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "by.epam.taskfifth.entity.LogisticBase.releaseTerminal(by.epam.taskfifth.entity.Terminal)" because "base" is null
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:71) ~[classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2021-11-26 14:13:33 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:13:33 [Timer-0] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [pool-2-thread-1] FATAL by.epam.taskfifth.reader.CustomReader - File is not founddata/termina.txt
+2021-11-26 14:13:33 [main] ERROR by.epam.taskfifth.main.UserMain - ExecutionException 
+java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "by.epam.taskfifth.entity.LogisticBase.releaseTerminal(by.epam.taskfifth.entity.Terminal)" because "base" is null
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:38) [classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "by.epam.taskfifth.entity.LogisticBase.releaseTerminal(by.epam.taskfifth.entity.Terminal)" because "base" is null
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:71) ~[classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) ~[classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2021-11-26 14:18:55 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:18:55 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:18:55 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-26 14:18:55 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:18:55 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1000 and spoiling products are true
+2021-11-26 14:18:58 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-26 14:18:58 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-26 14:18:58 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-26 14:18:58 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 1100 and spoiling products are false
+2021-11-26 14:18:58 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-26 14:19:01 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-26 14:19:01 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-26 14:19:01 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-26 14:19:01 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-26 14:19:01 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1200 and spoiling products are true
+2021-11-26 14:19:04 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-26 14:19:04 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-26 14:19:04 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1200 Terminal: 3

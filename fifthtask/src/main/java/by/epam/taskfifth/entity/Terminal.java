@@ -31,14 +31,14 @@ public class Terminal {
     }
     public void serveLorry(Lorry lorry){
         try{
+            TimeUnit.SECONDS.sleep((int)Math.random()*10);
             size = lorry.isUpload() ? size - lorry.getProducts() : size + lorry.getProducts();
             logger.log(Level.INFO, "The rest is " + size);
-            TimeUnit.SECONDS.sleep((int)Math.random()*10);
+            logger.info("Terminal " + getTerminalId() + "has served a lorry " + lorry.getLorryId() +
+                    " and spoiling products are " + lorry.isSpoilingProduct());
         }catch(InterruptedException e){
             logger.log(Level.ERROR,"Thread was interrupted while sleeping",e);
             Thread.currentThread().interrupt();
         }
-        logger.info("Terminal"+getTerminalId()+"has served a lorry "+lorry.getLorryId()+
-                " and spoiling products are " + lorry.isSpoilingProduct());
     }
 }

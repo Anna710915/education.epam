@@ -1,0 +1,102 @@
+2021-11-26 15:01:26 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:26 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:26 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:26 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:26 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:26 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:26 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:26 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:27 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:27 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-2] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-7] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-1] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-5] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-9] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-6] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:28 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:28 [Timer-8] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650]
+2021-11-26 15:01:29 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-26 15:01:29 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:29 [Timer-0] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650, by.epam.taskfifth.entity.Terminal@4a1f439e]
+2021-11-26 15:01:29 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:29 [Timer-4] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650, by.epam.taskfifth.entity.Terminal@4a1f439e]
+2021-11-26 15:01:29 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - Timer cycle
+2021-11-26 15:01:29 [Timer-3] DEBUG by.epam.taskfifth.entity.LogisticBase - [by.epam.taskfifth.entity.Terminal@4e20de82, by.epam.taskfifth.entity.Terminal@3b21c015, by.epam.taskfifth.entity.Terminal@15ae9650, by.epam.taskfifth.entity.Terminal@4a1f439e]

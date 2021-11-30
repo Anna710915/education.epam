@@ -1,0 +1,142 @@
+2021-11-20 15:22:24 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-20 15:22:24 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-20 15:22:24 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1200 Terminal: 3
+2021-11-20 15:22:27 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-20 15:22:27 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1700 is serviced by terminal and spoiling products are true
+2021-11-20 15:22:27 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-20 15:22:27 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.Terminal - Terminal4has served a lorry 1700 and spoiling products are true
+2021-11-20 15:22:27 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-20 15:22:27 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-20 15:22:27 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 1300 and spoiling products are false
+2021-11-20 15:22:27 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1900 is serviced by terminal and spoiling products are false
+2021-11-20 15:22:27 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1800 is serviced by terminal and spoiling products are true
+2021-11-20 15:22:27 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-20 15:22:27 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-20 15:22:27 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1900 and spoiling products are false
+2021-11-20 15:22:27 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.Terminal - Terminal5has served a lorry 1800 and spoiling products are true
+2021-11-20 15:22:30 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-20 15:22:33 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-20 15:22:33 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1300 Terminal: 2
+2021-11-20 15:22:33 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1400 Terminal: 3
+2021-11-20 15:22:33 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1500 Terminal: 4
+2021-11-20 15:22:33 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1600 Terminal: 5
+2021-11-20 15:22:33 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1700 Terminal: 4
+2021-11-20 15:22:36 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-20 15:22:39 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 5
+2021-11-20 15:22:39 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1800 Terminal: 5
+2021-11-20 15:22:39 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1900 Terminal: 1
+2021-11-23 10:37:37 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found!resources\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.findFilePath(CustomReader.java:34) ~[classes/:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:19) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+2021-11-23 10:38:51 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found!resources\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.findFilePath(CustomReader.java:34) ~[classes/:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:19) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+2021-11-23 10:39:04 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:27) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+Caused by: java.io.FileNotFoundException: lorry.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:111) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:20) ~[classes/:?]
+	... 1 more
+2021-11-23 10:41:19 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found!src\main\resources\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.findFilePath(CustomReader.java:34) ~[classes/:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:19) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+2021-11-23 10:41:45 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found!src\main\resources\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.findFilePath(CustomReader.java:34) ~[classes/:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:19) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+2021-11-23 10:44:23 [main] DEBUG by.epam.taskfifth.reader.CustomReader - Optional[[id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]]
+2021-11-23 10:44:23 [Timer-0] DEBUG by.epam.taskfifth.reader.CustomReader - Optional[[id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]]
+2021-11-23 10:44:23 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-23 10:44:23 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-23 10:44:23 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-23 10:44:23 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1400 is serviced by terminal and spoiling products are true
+2021-11-23 10:44:23 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-23 10:44:23 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-23 10:44:23 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-23 10:44:23 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-23 10:44:23 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-23 10:44:23 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-23 10:44:23 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-23 10:44:23 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-23 10:44:23 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-23 10:44:23 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-23 10:44:23 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-23 10:44:23 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal4has served a lorry 1300 and spoiling products are false
+2021-11-23 10:44:23 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 1200 and spoiling products are true
+2021-11-23 10:44:23 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1100 and spoiling products are false
+2021-11-23 10:44:23 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1000 and spoiling products are true
+2021-11-23 10:44:23 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal5has served a lorry 1400 and spoiling products are true
+2021-11-23 10:44:26 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-23 10:44:29 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-23 10:44:32 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-23 10:44:32 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-23 10:44:35 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-23 10:44:35 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 3
+2021-11-23 10:44:35 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1200 Terminal: 2
+2021-11-23 10:44:35 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1300 Terminal: 4
+2021-11-23 10:47:14 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found!src\main\resources\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.findFilePath(CustomReader.java:34) ~[classes/:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:19) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+2021-11-23 10:48:10 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found data\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:27) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+Caused by: java.io.FileNotFoundException: C:\Users\admin\source\JavaProjects\education.epam\fifthtask\target\classes\data%5clorry.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:111) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:20) ~[classes/:?]
+	... 1 more
+2021-11-23 10:49:21 [main] ERROR by.epam.taskfifth.main.UserMain - CustomException or InterruptedException
+by.epam.taskfifth.exception.CustomException: File is not found data\lorry.txt
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:27) ~[classes/:?]
+	at by.epam.taskfifth.main.UserMain.main(UserMain.java:29) [classes/:?]
+Caused by: java.io.FileNotFoundException: C:\Users\admin\source\JavaProjects\education.epam\fifthtask\target\classes\data%5clorry.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:111) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at by.epam.taskfifth.reader.CustomReader.readFiles(CustomReader.java:20) ~[classes/:?]
+	... 1 more
+2021-11-23 10:49:41 [Timer-0] DEBUG by.epam.taskfifth.reader.CustomReader - Optional[[id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]]
+2021-11-23 10:49:41 [main] DEBUG by.epam.taskfifth.reader.CustomReader - Optional[[id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]]
+2021-11-23 10:49:41 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-23 10:49:41 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-23 10:49:41 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-23 10:49:41 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-23 10:49:41 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-23 10:49:41 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-23 10:49:41 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-23 10:49:41 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-23 10:49:41 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1900 is serviced by terminal and spoiling products are false
+2021-11-23 10:49:41 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-23 10:49:41 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-23 10:49:41 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-23 10:49:41 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-23 10:49:41 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-23 10:49:41 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-23 10:49:41 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal1has served a lorry 1000 and spoiling products are true
+2021-11-23 10:49:41 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal2has served a lorry 1100 and spoiling products are false
+2021-11-23 10:49:41 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal4has served a lorry 1300 and spoiling products are false
+2021-11-23 10:49:41 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - Terminal5has served a lorry 1900 and spoiling products are false
+2021-11-23 10:49:41 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal3has served a lorry 1200 and spoiling products are true
+2021-11-26 13:56:49 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 13:56:49 [Timer-0] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]

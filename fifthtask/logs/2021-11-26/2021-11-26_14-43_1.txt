@@ -1,0 +1,112 @@
+2021-11-26 14:39:25 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1500 and spoiling products are false
+2021-11-26 14:39:28 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 5
+2021-11-26 14:39:28 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1700 is serviced by terminal and spoiling products are true
+2021-11-26 14:39:28 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.Terminal - The rest is 160
+2021-11-26 14:39:28 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.Terminal - Terminal 3has served a lorry 1700 and spoiling products are true
+2021-11-26 14:39:31 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-26 14:39:34 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-26 14:39:34 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-26 14:39:34 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-26 14:39:34 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.Terminal - Terminal 4has served a lorry 1300 and spoiling products are false
+2021-11-26 14:39:37 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-26 14:39:37 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1400 is serviced by terminal and spoiling products are true
+2021-11-26 14:39:37 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-26 14:39:37 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1400 and spoiling products are true
+2021-11-26 14:39:37 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1300 Terminal: 4
+2021-11-26 14:39:40 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-26 14:39:40 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1400 Terminal: 1
+2021-11-26 14:39:40 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1500 Terminal: 2
+2021-11-26 14:39:40 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1600 Terminal: 1
+2021-11-26 14:39:40 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1700 Terminal: 3
+2021-11-26 14:39:40 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1800 Terminal: 3
+2021-11-26 14:39:40 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1900 Terminal: 5
+2021-11-26 14:40:35 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:40:35 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:40:42 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-26 14:40:42 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:40:42 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-26 14:40:45 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-26 14:40:45 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1900 is serviced by terminal and spoiling products are false
+2021-11-26 14:40:45 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:40:45 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1900 and spoiling products are false
+2021-11-26 14:40:45 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-26 14:40:48 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-26 14:40:48 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-26 14:40:48 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1500 is serviced by terminal and spoiling products are false
+2021-11-26 14:40:48 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:40:48 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:40:48 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal 4has served a lorry 1500 and spoiling products are false
+2021-11-26 14:40:48 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 3has served a lorry 1100 and spoiling products are false
+2021-11-26 14:42:02 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:42:02 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:42:02 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:42:02 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:42:02 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:42:02 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:42:02 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:42:02 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-26 14:42:02 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1800 is serviced by terminal and spoiling products are true
+2021-11-26 14:42:02 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1600 is serviced by terminal and spoiling products are false
+2021-11-26 14:42:02 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1900 is serviced by terminal and spoiling products are false
+2021-11-26 14:42:02 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:42:02 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:42:02 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:42:02 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-26 14:42:02 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:42:02 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:42:02 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-26 14:42:02 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.Terminal - Terminal 4has served a lorry 1600 and spoiling products are false
+2021-11-26 14:42:02 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1200 and spoiling products are true
+2021-11-26 14:42:02 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.Terminal - Terminal 3has served a lorry 1800 and spoiling products are true
+2021-11-26 14:42:02 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - Terminal 5has served a lorry 1900 and spoiling products are false
+2021-11-26 14:42:05 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-26 14:42:05 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-26 14:42:08 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-26 14:42:11 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-26 14:42:21 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:42:21 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:42:21 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:42:21 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:42:21 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:42:21 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:42:21 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:42:21 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1400 is serviced by terminal and spoiling products are true
+2021-11-26 14:42:21 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1500 is serviced by terminal and spoiling products are false
+2021-11-26 14:42:21 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-26 14:42:21 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-26 14:42:21 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:42:21 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:42:21 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:42:21 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-26 14:42:21 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:42:21 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:42:21 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.Terminal - Terminal 3has served a lorry 1400 and spoiling products are true
+2021-11-26 14:42:21 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1200 and spoiling products are true
+2021-11-26 14:42:21 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 5has served a lorry 1100 and spoiling products are false
+2021-11-26 14:42:21 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal 4has served a lorry 1500 and spoiling products are false
+2021-11-26 14:42:21 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-26 14:42:25 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 3
+2021-11-26 14:42:28 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-26 14:42:31 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 5
+2021-11-26 14:42:34 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 4
+2021-11-26 14:43:37 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true unload=30 size=40, id=1300 spoiling=false upload=30 size=40, id=1400 spoiling=true unload=30 size=40, id=1500 spoiling=false upload=30 size=40, id=1600 spoiling=false upload=30 size=40, id=1700 spoiling=true unload=30 size=40, id=1800 spoiling=true unload=30 size=40, id=1900 spoiling=false unload=30 size=40]
+2021-11-26 14:43:37 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-26 14:43:37 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:43:37 [pool-2-thread-9] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:43:37 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products
+2021-11-26 14:43:37 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:43:37 [pool-2-thread-5] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-26 14:43:37 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-26 14:43:37 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1900 is serviced by terminal and spoiling products are false
+2021-11-26 14:43:37 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1600 is serviced by terminal and spoiling products are false
+2021-11-26 14:43:37 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-26 14:43:37 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-26 14:43:37 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:43:37 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:43:37 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:43:37 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 70
+2021-11-26 14:43:37 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 130
+2021-11-26 14:43:37 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.Terminal - Terminal 5has served a lorry 1600 and spoiling products are false
+2021-11-26 14:43:37 [pool-2-thread-10] INFO  by.epam.taskfifth.entity.Terminal - Terminal 3has served a lorry 1900 and spoiling products are false
+2021-11-26 14:43:37 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1200 and spoiling products are true
+2021-11-26 14:43:37 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 4has served a lorry 1100 and spoiling products are false
