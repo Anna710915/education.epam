@@ -1,5 +1,7 @@
 package by.epam.taskfifth.entity;
 
+import by.epam.taskfifth.exception.CustomException;
+
 import java.util.concurrent.Callable;
 
 public class Lorry implements Callable<String> {
@@ -68,7 +70,7 @@ public class Lorry implements Callable<String> {
             infoTerminal = String.valueOf(terminal.getTerminalId());
             terminal.serveLorry(this);
             return "Lorry: "+this.getLorryId() + " Terminal: " +infoTerminal;
-        }finally {
+        } finally {
             base.releaseTerminal(terminal);
         }
     }

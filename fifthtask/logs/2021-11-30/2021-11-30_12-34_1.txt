@@ -1,0 +1,155 @@
+2021-11-30 10:23:27 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-30 10:23:27 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-30 10:25:37 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40]
+2021-11-30 10:25:37 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-30 10:25:39 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-30 10:25:39 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 10:25:39 [pool-2-thread-1] ERROR by.epam.taskfifth.entity.Terminal - Thread was interrupted while sleeping
+java.lang.InterruptedException: null
+	at by.epam.taskfifth.entity.Terminal.serveLorry(Terminal.java:37) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:69) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:25:41 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-30 10:25:41 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-30 10:25:41 [pool-2-thread-2] ERROR by.epam.taskfifth.entity.Terminal - Thread was interrupted while sleeping
+java.lang.InterruptedException: null
+	at by.epam.taskfifth.entity.Terminal.serveLorry(Terminal.java:37) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:69) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:25:41 [pool-2-thread-1] ERROR by.epam.taskfifth.entity.LogisticBase - The current thread is interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[?:?]
+	at java.lang.Thread.sleep(Thread.java:337) ~[?:?]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446) ~[?:?]
+	at by.epam.taskfifth.entity.LogisticBase.releaseTerminal(LogisticBase.java:91) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:72) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:25:41 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-30 10:25:41 [pool-2-thread-2] ERROR by.epam.taskfifth.entity.LogisticBase - The current thread is interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[?:?]
+	at java.lang.Thread.sleep(Thread.java:337) ~[?:?]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446) ~[?:?]
+	at by.epam.taskfifth.entity.LogisticBase.releaseTerminal(LogisticBase.java:91) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:72) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:25:41 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-30 10:29:32 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40]
+2021-11-30 10:29:32 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-30 10:29:34 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-30 10:29:34 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 10:29:34 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-30 10:29:36 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-30 10:29:36 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-30 10:29:36 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1100 and spoiling products are false
+2021-11-30 10:29:37 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-30 10:29:37 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-30 10:29:38 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-30 10:29:38 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-30 10:29:57 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40]
+2021-11-30 10:29:57 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-30 10:29:59 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-30 10:29:59 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 10:29:59 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-30 10:29:59 [pool-2-thread-1] ERROR by.epam.taskfifth.entity.Terminal - Thread was interrupted while sleeping
+java.lang.InterruptedException: null
+	at by.epam.taskfifth.entity.Terminal.serveLorry(Terminal.java:39) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:69) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:30:01 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-30 10:30:01 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-30 10:30:01 [pool-2-thread-1] ERROR by.epam.taskfifth.entity.LogisticBase - The current thread is interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[?:?]
+	at java.lang.Thread.sleep(Thread.java:337) ~[?:?]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446) ~[?:?]
+	at by.epam.taskfifth.entity.LogisticBase.releaseTerminal(LogisticBase.java:91) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:72) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:30:01 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1100 and spoiling products are false
+2021-11-30 10:30:01 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-30 10:30:01 [pool-2-thread-2] ERROR by.epam.taskfifth.entity.Terminal - Thread was interrupted while sleeping
+java.lang.InterruptedException: null
+	at by.epam.taskfifth.entity.Terminal.serveLorry(Terminal.java:39) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:69) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:30:01 [pool-2-thread-2] ERROR by.epam.taskfifth.entity.LogisticBase - The current thread is interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[?:?]
+	at java.lang.Thread.sleep(Thread.java:337) ~[?:?]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446) ~[?:?]
+	at by.epam.taskfifth.entity.LogisticBase.releaseTerminal(LogisticBase.java:91) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:72) [classes/:?]
+	at by.epam.taskfifth.entity.Lorry.call(Lorry.java:5) [classes/:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2021-11-30 10:30:01 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-30 11:26:54 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40]
+2021-11-30 11:26:54 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-30 11:26:56 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-30 11:26:58 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-30 11:27:04 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 11:27:04 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-30 11:27:05 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-30 11:27:05 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 1
+2021-11-30 11:27:06 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-30 11:27:06 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1100 and spoiling products are false
+2021-11-30 11:27:07 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-30 11:27:07 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 2
+2021-11-30 11:27:26 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40]
+2021-11-30 11:27:26 [pool-2-thread-2] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-30 11:27:28 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-30 11:27:29 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-30 11:27:29 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1100 and spoiling products are false
+2021-11-30 11:27:30 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-30 11:27:31 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 1
+2021-11-30 11:27:38 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 11:27:38 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1000 and spoiling products are true
+2021-11-30 11:27:39 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Terminal is released: 2
+2021-11-30 11:27:39 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1000 Terminal: 2
+2021-11-30 11:27:39 [main] INFO  by.epam.taskfifth.main.UserMain - Lorry: 1100 Terminal: 1
+2021-11-30 12:34:01 [main] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1000 spoiling=true upload=30 size=40, id=1100 spoiling=false unload=30 size=40, id=1200 spoiling=true upload=30 size=40, id=1300 spoiling=false unload=30 size=40, id=1400 spoiling=true upload=30 size=40, id=1500 spoiling=false unload=30 size=40, id=1600 spoiling=false unload=30 size=40, id=1700 spoiling=true unload=30 size=40]
+2021-11-30 12:34:01 [pool-2-thread-1] DEBUG by.epam.taskfifth.reader.CustomReader - [id=1 size=100, id=2 size=100, id=3 size=100, id=4 size=100, id=5 size=100]
+2021-11-30 12:34:03 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1000 is serviced by terminal and spoiling products are true
+2021-11-30 12:34:05 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1500 is serviced by terminal and spoiling products are false
+2021-11-30 12:34:07 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1200 is serviced by terminal and spoiling products are true
+2021-11-30 12:34:08 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - The rest is 80
+2021-11-30 12:34:08 [pool-2-thread-6] INFO  by.epam.taskfifth.entity.Terminal - Terminal 2has served a lorry 1500 and spoiling products are false
+2021-11-30 12:34:09 [pool-2-thread-2] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1100 is serviced by terminal and spoiling products are false
+2021-11-30 12:34:11 [pool-2-thread-4] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry 1300 is serviced by terminal and spoiling products are false
+2021-11-30 12:34:12 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 12:34:12 [pool-2-thread-1] INFO  by.epam.taskfifth.entity.Terminal - Terminal 1has served a lorry 1000 and spoiling products are true
+2021-11-30 12:34:13 [pool-2-thread-8] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry has spoiling products
+2021-11-30 12:34:14 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - The rest is 20
+2021-11-30 12:34:14 [pool-2-thread-3] INFO  by.epam.taskfifth.entity.Terminal - Terminal 3has served a lorry 1200 and spoiling products are true
+2021-11-30 12:34:15 [pool-2-thread-7] INFO  by.epam.taskfifth.entity.LogisticBase - Lorry does not have spoiling products

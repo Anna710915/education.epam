@@ -15,15 +15,13 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LogisticBase {
     static final Logger logger = LogManager.getLogger();
     private static LogisticBase instance;
-    private static ReentrantLock lockerSingleton = new ReentrantLock();
+    private static ReentrantLock lockerCreator = new ReentrantLock();
     private static AtomicBoolean creator = new AtomicBoolean(false);
     private ReentrantLock locker = new ReentrantLock();
     private Deque<Terminal> freeTerminals = new ArrayDeque<>();
-    private Deque<Condition> usedQueue = new ArrayDeque<>();
+    private Deque<Condition> nonPerishableQueue = new ArrayDeque<>();
+    private Deque<Condition> perishableQueue = new ArrayDeque<>();
     private LogisticBase(){
-        init();
-    }
-    private void init(){
         String filename = "data/terminal.txt";
         CustomReader reader = new CustomReader();
         List<String> listTerminals = reader.readFiles(filename);
@@ -37,14 +35,14 @@ public class LogisticBase {
     public static LogisticBase getInstance(){
         if(!creator.get()){
             try{
-                lockerSingleton.lock();
+                lockerCreator.lock();
                 if(instance == null){
                     instance = new LogisticBase();
                     startTimer();
                     creator.set(true);
                 }
             } finally {
-                lockerSingleton.unlock();
+                lockerCreator.unlock();
             }
         }
         return instance;
@@ -63,10 +61,10 @@ public class LogisticBase {
             Condition condition = locker.newCondition();
             if (freeTerminals.isEmpty()) {
                 if(lorry.isSpoilingProduct()){
-                    usedQueue.addFirst(condition);
+                    perishableQueue.addLast(condition);
                     logger.log(Level.INFO,"Lorry has spoiling products");
                 }else{
-                    usedQueue.addLast(condition);
+                    nonPerishableQueue.addLast(condition);
                     logger.log(Level.INFO,"Lorry does not have spoiling products");
                 }
                 condition.await();
@@ -90,7 +88,7 @@ public class LogisticBase {
             freeTerminals.addLast(terminal);
             TimeUnit.SECONDS.sleep(1);
             logger.log(Level.INFO,"Terminal is released: " + terminal.getTerminalId());
-            condition = usedQueue.pollFirst();
+            condition = perishableQueue.isEmpty() ? nonPerishableQueue.pollFirst() : perishableQueue.pollFirst();
         }catch(InterruptedException e){
             logger.log(Level.ERROR,"The current thread is interrupted", e);
             Thread.currentThread().interrupt();
@@ -104,10 +102,10 @@ public class LogisticBase {
 
     public void checkSizeTerminals(){
         freeTerminals.forEach(o->{
-            if(o.getSize()>0.7*o.getMaxSize()){
-                o.setSize(o.getMaxSize()/2);
-            }else if(o.getSize()<o.getMaxSize()*0.3){
-                o.setSize(o.getMaxSize()/2);
+            if(o.getSize()>0.7*Terminal.MAX_SIZE){
+                o.setSize(Terminal.MAX_SIZE/2);
+            }else if(o.getSize()<Terminal.MAX_SIZE*0.3){
+                o.setSize(Terminal.MAX_SIZE/2);
             }
         });
     }
