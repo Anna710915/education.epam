@@ -1,0 +1,142 @@
+2021-12-05 15:01:27 [main] FATAL by.epam.connectiontask.factory.ConnectionFactory - File properties exception: data\database.properties
+2021-12-05 15:06:41 [main] FATAL by.epam.connectiontask.factory.ConnectionFactory - File properties exception: /C:/Users/admin/source/JavaProjects/education.epam/connectiontask/target/classes/data%5cdatabase.properties
+2021-12-06 22:15:12 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:12 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:12 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:12 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:15:36 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:16:09 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Deregister driver.
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:18:47 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:20:06 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Deregister driver.
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 22:25:53 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Deregister driver.
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:22 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-06 23:48:23 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Deregister driver.
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:15:29 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Deregister driver.
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection is true
+2021-12-07 00:17:13 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=2, discount=0.03, yearOrders=3}
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Connection closed!
+2021-12-07 00:17:13 [main] DEBUG by.epam.connectiontask.pool.ConnectionPool - Deregister driver.
+2021-12-07 00:18:07 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=2, discount=0.03, yearOrders=3}
+2021-12-07 00:18:27 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}]
+2021-12-07 00:18:27 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=2, discount=0.03, yearOrders=3}
+2021-12-07 00:35:59 [main] INFO  by.epam.connectiontask.dao.AbstractDao - rowUpdate equals: 1
+2021-12-07 01:07:40 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=5, discount=0.1, yearOrders=24}]
+2021-12-07 01:12:22 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=3, discount=0.05, yearOrders=6}
+2021-12-07 01:12:22 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=3, discount=0.05, yearOrders=6}
+2021-12-07 01:12:22 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The new row: UserDiscount{discountId=3, discount=0.06, yearOrders=8}
+2021-12-07 01:12:41 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.06, yearOrders=8}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=5, discount=0.1, yearOrders=24}]
+2021-12-07 01:13:21 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=3, discount=0.06, yearOrders=8}
+2021-12-07 01:13:21 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=3, discount=0.06, yearOrders=8}
+2021-12-07 01:13:21 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The new row: UserDiscount{discountId=3, discount=0.05, yearOrders=6}
+2021-12-07 01:13:35 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=5, discount=0.1, yearOrders=24}]
