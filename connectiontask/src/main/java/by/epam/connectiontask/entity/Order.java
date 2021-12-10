@@ -3,6 +3,34 @@ package by.epam.connectiontask.entity;
 import java.time.LocalDateTime;
 
 public class Order extends CustomEntity {
+
+    public enum OrderState {
+        NEW("new"), PROCESSING("processing"), CANCELLED("cancelled"), RECEIVED("received"), COMPLETED("completed"), OVERDUE("overdue");
+
+        String state;
+
+        OrderState(String state){
+            this.state = state;
+        }
+
+        public String getState(){
+            return state;
+        }
+    }
+
+    public enum TypePayment {
+        CASH("cash"), CARD("card");
+        String payment;
+
+        TypePayment(String payment){
+            this.payment = payment;
+        }
+
+        public String getPayment(){
+            return payment;
+        }
+    }
+
     private long orderId;
     private LocalDateTime orderDate;
     private OrderState orderState;
@@ -71,25 +99,11 @@ public class Order extends CustomEntity {
         this.commentDate = commentDate;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Order order = (Order) o;
-
-        if (orderId != order.orderId) return false;
-        if (orderDate != null ? !orderDate.equals(order.orderDate) : order.orderDate != null) return false;
-        if (orderState != order.orderState) return false;
-        return typePayment == order.typePayment;
+    public long getUserId() {
+        return userId;
     }
 
-    @Override
-    public int hashCode() {
-        int result = (int) (orderId ^ (orderId >>> 32));
-        result = 31 * result + (orderDate != null ? orderDate.hashCode() : 0);
-        result = 31 * result + (orderState != null ? orderState.hashCode() : 0);
-        result = 31 * result + (typePayment != null ? typePayment.hashCode() : 0);
-        return result;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 }

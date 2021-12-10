@@ -1,8 +1,10 @@
 package by.epam.connectiontask.entity;
 
+import java.math.BigDecimal;
 import java.time.LocalTime;
 
 public class Menu extends CustomEntity {
+
     private long foodId;
     private String nameFood;
     private String picturePath;
@@ -10,14 +12,15 @@ public class Menu extends CustomEntity {
     private double weight;
     private double calories;
     private LocalTime cookingTime;
-    private double discount;
-    private double price;
+    private BigDecimal discount;
+    private BigDecimal price;
     private long sectionId;
 
     public Menu(){}
 
-    public Menu(long foodId, String nameFood, String picturePath, String composition, double weight,
-                double calories, LocalTime cookingTime, double discount, double price, long sectionId) {
+    public Menu(long foodId, String nameFood, String picturePath, String composition,
+                double weight, double calories, LocalTime cookingTime, BigDecimal discount,
+                BigDecimal price, long sectionId) {
         this.foodId = foodId;
         this.nameFood = nameFood;
         this.picturePath = picturePath;
@@ -86,19 +89,19 @@ public class Menu extends CustomEntity {
         this.cookingTime = cookingTime;
     }
 
-    public double getDiscount() {
+    public BigDecimal getDiscount() {
         return discount;
     }
 
-    public void setDiscount(double discount) {
+    public void setDiscount(BigDecimal discount) {
         this.discount = discount;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
@@ -110,43 +113,4 @@ public class Menu extends CustomEntity {
         this.sectionId = sectionId;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Menu menu = (Menu) o;
-
-        if (foodId != menu.foodId) return false;
-        if (Double.compare(menu.weight, weight) != 0) return false;
-        if (Double.compare(menu.calories, calories) != 0) return false;
-        if (Double.compare(menu.discount, discount) != 0) return false;
-        if (Double.compare(menu.price, price) != 0) return false;
-        if (sectionId != menu.sectionId) return false;
-        if (!nameFood.equals(menu.nameFood)) return false;
-        if (!picturePath.equals(menu.picturePath)) return false;
-        if (!composition.equals(menu.composition)) return false;
-        return cookingTime.equals(menu.cookingTime);
-    }
-
-    @Override
-    public int hashCode() {
-        int result;
-        long temp;
-        result = (int) (foodId ^ (foodId >>> 32));
-        result = 31 * result + nameFood.hashCode();
-        result = 31 * result + picturePath.hashCode();
-        result = 31 * result + composition.hashCode();
-        temp = Double.doubleToLongBits(weight);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(calories);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + cookingTime.hashCode();
-        temp = Double.doubleToLongBits(discount);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(price);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (int) (sectionId ^ (sectionId >>> 32));
-        return result;
-    }
 }

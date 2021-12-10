@@ -1,5 +1,8 @@
 package by.epam.connectiontask.dao;
 
+import by.epam.connectiontask.dao.impl.AbstractDao;
+import by.epam.connectiontask.dao.impl.EntityTransaction;
+import by.epam.connectiontask.dao.impl.UserDiscountDao;
 import org.testng.annotations.BeforeClass;
 
 public class UserDaoTest {

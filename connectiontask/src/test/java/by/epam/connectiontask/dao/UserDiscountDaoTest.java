@@ -1,11 +1,16 @@
 package by.epam.connectiontask.dao;
 
+import by.epam.connectiontask.dao.impl.AbstractDao;
+import by.epam.connectiontask.dao.impl.EntityTransaction;
+import by.epam.connectiontask.dao.impl.UserDiscountDao;
 import by.epam.connectiontask.entity.UserDiscount;
 import by.epam.connectiontask.exception.DaoException;
 import by.epam.connectiontask.pool.ConnectionPool;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.*;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 
@@ -32,13 +37,13 @@ public class UserDiscountDaoTest {
     }
     @Test
     public void createTest() throws DaoException {
-        boolean actual = abstractDao.create(new UserDiscount(0.1,24));
+        boolean actual = abstractDao.create(new UserDiscount(new BigDecimal(0.1),24));
         assertTrue(actual);
     }
 
     @Test
     public void updateTest() throws DaoException {
-        UserDiscount newUserDiscount = new UserDiscount(3, 0.05, 6);
+        UserDiscount newUserDiscount = new UserDiscount(3, new BigDecimal(0.05), 6);
         UserDiscount expected = (UserDiscount) abstractDao.findEntityById(3);
         UserDiscount actual = (UserDiscount) abstractDao.update(newUserDiscount);
         assertEquals(actual, expected);
@@ -46,12 +51,12 @@ public class UserDiscountDaoTest {
 
     @Test
     public void deleteByIdTest() throws DaoException {
-        boolean actual = abstractDao.delete(5);
+        boolean actual = abstractDao.delete(3);
         assertTrue(actual);
     }
     @Test
     public void deleteTest() throws DaoException {
-        boolean actual = abstractDao.delete(new UserDiscount(7,0.1,24));
+        boolean actual = abstractDao.delete(new UserDiscount(7,new BigDecimal(0.1),24));
         assertTrue(actual);
     }
     @AfterClass

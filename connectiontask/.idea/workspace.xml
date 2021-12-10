@@ -14,12 +14,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="21ofrbsgUxpS4fWEGlI783nlSnv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,22 +51,23 @@
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\connectiontask\src\main\resources\data" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.epam.connectiontask.dao" />
+      <recent name="by.epam.connectiontask" />
       <recent name="by.epam.connectiontask.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UserDiscountDaoTest.findAllTest">
-    <configuration name="UserDiscountDaoTest.createTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.UserDiscountDaoTest.deleteTest">
+    <configuration name="UserDiscountDaoTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="connectiontask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.connectiontask.dao.*" />
+          <option name="PATTERN" value="by.epam.connectiontask.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.epam.connectiontask.dao" />
       <option name="MAIN_CLASS_NAME" value="by.epam.connectiontask.dao.UserDiscountDaoTest" />
-      <option name="METHOD_NAME" value="createTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -68,7 +78,7 @@
       <module name="connectiontask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.connectiontask.dao.*" />
+          <option name="PATTERN" value="by.epam.connectiontask.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,7 +96,7 @@
       <module name="connectiontask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.connectiontask.dao.*" />
+          <option name="PATTERN" value="by.epam.connectiontask.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +114,7 @@
       <module name="connectiontask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.connectiontask.dao.*" />
+          <option name="PATTERN" value="by.epam.connectiontask.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,17 +128,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDiscountDaoTest.updateTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDiscountDaoTest.findEntityByIdTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="connectiontask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.connectiontask.dao.*" />
+          <option name="PATTERN" value="by.epam.connectiontask.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.epam.connectiontask.dao" />
       <option name="MAIN_CLASS_NAME" value="by.epam.connectiontask.dao.UserDiscountDaoTest" />
-      <option name="METHOD_NAME" value="updateTest" />
+      <option name="METHOD_NAME" value="findEntityByIdTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UserDiscountDaoTest.findAllTest" />
         <item itemvalue="TestNG.UserDiscountDaoTest.deleteTest" />
-        <item itemvalue="TestNG.UserDiscountDaoTest.createTest" />
         <item itemvalue="TestNG.UserDiscountDaoTest.deleteByIdTest" />
-        <item itemvalue="TestNG.UserDiscountDaoTest.updateTest" />
+        <item itemvalue="TestNG.UserDiscountDaoTest" />
+        <item itemvalue="TestNG.UserDiscountDaoTest.findAllTest" />
+        <item itemvalue="TestNG.UserDiscountDaoTest.findEntityByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +169,12 @@
       <workItem from="1638808461433" duration="11085000" />
       <workItem from="1638823676325" duration="6459000" />
       <workItem from="1638859935906" duration="4199000" />
+      <workItem from="1638901592518" duration="9613000" />
+      <workItem from="1638949452740" duration="5745000" />
+      <workItem from="1639066372128" duration="12804000" />
+      <workItem from="1639080294398" duration="495000" />
+      <workItem from="1639081169181" duration="710000" />
+      <workItem from="1639119273883" duration="2064000" />
     </task>
     <servers />
   </component>

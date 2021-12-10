@@ -4,6 +4,30 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class User extends CustomEntity {
+    public enum UserRole {
+        ADMIN(1), CLIENT(2);
+        private long roleId;
+
+        UserRole(long id){
+            roleId = id;
+        }
+
+        public long getRoleId(){
+            return roleId;
+        }
+    }
+    public enum UserState {
+        NEW(1), ACTIVE(2), INACTIVE(3), BLOCKED(4), UNBLOCKED(5);
+        private long stateId;
+
+        UserState (long id){
+            stateId = id;
+        }
+
+        public long getStateId(){
+            return stateId;
+        }
+    }
     private long userId;
     private String firstName;
     private String lastName;
@@ -13,14 +37,15 @@ public class User extends CustomEntity {
     private int phoneNumber;
     private LocalDate birthday;
     private LocalDateTime registrationDate;
-    private long stateId;
     private long discountId;
-    private long roleId;
+    private UserRole role;
+    private UserState state;
 
     public User(){}
 
-    public User(long userId, String firstName, String lastName, String login, String password,
-                String email, int phoneNumber, LocalDate birthday, LocalDateTime registrationDate, long stateId, long discountId, long roleId) {
+    public User(long userId, String firstName, String lastName, String login,
+                String password, String email, int phoneNumber, LocalDate birthday,
+                LocalDateTime registrationDate, long discountId, UserRole role, UserState state) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -30,9 +55,9 @@ public class User extends CustomEntity {
         this.phoneNumber = phoneNumber;
         this.birthday = birthday;
         this.registrationDate = registrationDate;
-        this.stateId = stateId;
         this.discountId = discountId;
-        this.roleId = roleId;
+        this.role = role;
+        this.state = state;
     }
 
     public long getUserId() {
@@ -107,14 +132,6 @@ public class User extends CustomEntity {
         this.registrationDate = registrationDate;
     }
 
-    public long getStateId() {
-        return stateId;
-    }
-
-    public void setStateId(long stateId) {
-        this.stateId = stateId;
-    }
-
     public long getDiscountId() {
         return discountId;
     }
@@ -123,68 +140,19 @@ public class User extends CustomEntity {
         this.discountId = discountId;
     }
 
-    public long getRoleId() {
-        return roleId;
+    public UserRole getRole() {
+        return role;
     }
 
-    public void setRoleId(long roleId) {
-        this.roleId = roleId;
+    public void setRole(UserRole role) {
+        this.role = role;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (userId != user.userId) return false;
-        if (phoneNumber != user.phoneNumber) return false;
-        if (stateId != user.stateId) return false;
-        if (discountId != user.discountId) return false;
-        if (roleId != user.roleId) return false;
-        if (!firstName.equals(user.firstName)) return false;
-        if (!lastName.equals(user.lastName)) return false;
-        if (!login.equals(user.login)) return false;
-        if (!password.equals(user.password)) return false;
-        if (!email.equals(user.email)) return false;
-        if (!birthday.equals(user.birthday)) return false;
-        return registrationDate.equals(user.registrationDate);
+    public UserState getState() {
+        return state;
     }
 
-    @Override
-    public int hashCode() {
-        int result = (int) (userId ^ (userId >>> 32));
-        result = 31 * result + firstName.hashCode();
-        result = 31 * result + lastName.hashCode();
-        result = 31 * result + login.hashCode();
-        result = 31 * result + password.hashCode();
-        result = 31 * result + email.hashCode();
-        result = 31 * result + phoneNumber;
-        result = 31 * result + birthday.hashCode();
-        result = 31 * result + registrationDate.hashCode();
-        result = 31 * result + (int) (stateId ^ (stateId >>> 32));
-        result = 31 * result + (int) (discountId ^ (discountId >>> 32));
-        result = 31 * result + (int) (roleId ^ (roleId >>> 32));
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("User{");
-        sb.append("userId=").append(userId);
-        sb.append(", firstName='").append(firstName).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append(", login='").append(login).append('\'');
-        sb.append(", password='").append(password).append('\'');
-        sb.append(", email='").append(email).append('\'');
-        sb.append(", phoneNumber=").append(phoneNumber);
-        sb.append(", birthday=").append(birthday);
-        sb.append(", registrationDate=").append(registrationDate);
-        sb.append(", stateId=").append(stateId);
-        sb.append(", discountId=").append(discountId);
-        sb.append(", roleId=").append(roleId);
-        sb.append('}');
-        return sb.toString();
+    public void setState(UserState state) {
+        this.state = state;
     }
 }

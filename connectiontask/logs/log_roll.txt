@@ -1,8 +1,26 @@
-2021-12-07 01:23:41 [main] INFO  by.epam.connectiontask.dao.AbstractDao - rowUpdate equals: 1
-2021-12-07 01:29:44 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=6, discount=0.1, yearOrders=24}]
-2021-12-07 01:30:27 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=6, discount=0.1, yearOrders=24}
-2021-12-07 01:30:51 [main] INFO  by.epam.connectiontask.dao.AbstractDao - rowUpdate equals: 1
-2021-12-07 01:31:02 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=7, discount=0.1, yearOrders=24}]
-2021-12-07 01:31:31 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=7, discount=0.1, yearOrders=24}
-2021-12-07 01:34:17 [main] INFO  by.epam.connectiontask.dao.AbstractDao - Entity: UserDiscount{discountId=7, discount=0.1, yearOrders=24}
-2021-12-07 01:35:02 [main] INFO  by.epam.connectiontask.dao.AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=5, discount=0.1, yearOrders=24}]
+2021-12-07 01:23:41 [main] INFO  AbstractDao - rowUpdate equals: 1
+2021-12-07 01:29:44 [main] INFO  AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=6, discount=0.1, yearOrders=24}]
+2021-12-07 01:30:27 [main] INFO  AbstractDao - Entity: UserDiscount{discountId=6, discount=0.1, yearOrders=24}
+2021-12-07 01:30:51 [main] INFO  AbstractDao - rowUpdate equals: 1
+2021-12-07 01:31:02 [main] INFO  AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=7, discount=0.1, yearOrders=24}]
+2021-12-07 01:31:31 [main] INFO  AbstractDao - Entity: UserDiscount{discountId=7, discount=0.1, yearOrders=24}
+2021-12-07 01:34:17 [main] INFO  AbstractDao - Entity: UserDiscount{discountId=7, discount=0.1, yearOrders=24}
+2021-12-07 01:35:02 [main] INFO  AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=5, discount=0.1, yearOrders=24}]
+2021-12-07 22:43:48 [main] INFO  AbstractDao - Entity: UserDiscount{discountId=2, discount=0.03, yearOrders=3}
+2021-12-07 22:47:41 [main] INFO  AbstractDao - The list of discounts: [UserDiscount{discountId=1, discount=0.0, yearOrders=0}, UserDiscount{discountId=2, discount=0.03, yearOrders=3}, UserDiscount{discountId=3, discount=0.05, yearOrders=6}, UserDiscount{discountId=4, discount=0.07, yearOrders=12}, UserDiscount{discountId=5, discount=0.1, yearOrders=24}]
+2021-12-09 19:50:09 [main] INFO  AbstractDao - rowUpdate equals: 1
+2021-12-09 19:50:09 [main] INFO  AbstractDao - Entity: null
+2021-12-09 19:50:09 [main] INFO  AbstractDao - The list of discounts: [by.epam.connectiontask.entity.UserDiscount@1c25b8a7, by.epam.connectiontask.entity.UserDiscount@200606de, by.epam.connectiontask.entity.UserDiscount@750fe12e, by.epam.connectiontask.entity.UserDiscount@f8908f6, by.epam.connectiontask.entity.UserDiscount@3e587920]
+2021-12-09 19:50:09 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@63fd4873
+2021-12-09 19:50:09 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@70e0accd
+2021-12-09 19:50:09 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@6ab72419
+2021-12-09 19:50:09 [main] INFO  AbstractDao - The new row: by.epam.connectiontask.entity.UserDiscount@4fdfa676
+2021-12-09 19:51:24 [main] INFO  AbstractDao - rowUpdate equals: 1
+2021-12-09 19:51:24 [main] INFO  AbstractDao - Entity: null
+2021-12-09 19:51:24 [main] INFO  AbstractDao - The list of discounts: [by.epam.connectiontask.entity.UserDiscount@3ff, by.epam.connectiontask.entity.UserDiscount@1306, by.epam.connectiontask.entity.UserDiscount@1e4c, by.epam.connectiontask.entity.UserDiscount@2995, by.epam.connectiontask.entity.UserDiscount@43e8, by.epam.connectiontask.entity.UserDiscount@47a9]
+2021-12-09 19:51:24 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@1306
+2021-12-09 19:51:24 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@1e4c
+2021-12-09 19:51:24 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@1e4c
+2021-12-09 19:51:24 [main] INFO  AbstractDao - The new row: by.epam.connectiontask.entity.UserDiscount@a6d79b06
+2021-12-09 19:52:23 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@3ff
+2021-12-09 19:52:37 [main] INFO  AbstractDao - Entity: by.epam.connectiontask.entity.UserDiscount@1306

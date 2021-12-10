@@ -35,7 +35,7 @@ public class ConnectionFactory {
             Class.forName(driverName);
         }catch (ClassNotFoundException | IOException e){
             logger.log(Level.FATAL,"File properties exception: " + fileProperties);
-            throw new RuntimeException();
+            throw new RuntimeException("File properties exception." + e.getMessage());
         }
         DATABASE_URL = (String) properties.get("db.url");
     }

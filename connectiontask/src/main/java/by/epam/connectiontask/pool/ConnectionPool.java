@@ -12,9 +12,7 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayDeque;
 import java.util.Properties;
-import java.util.Queue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -23,12 +21,12 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ConnectionPool {
     static final Logger logger = LogManager.getLogger();
     private static final Properties properties = new Properties();
-    private static final int DEFAULT_POOL_SIZE;
+    private static final int POOL_SIZE;
     private static AtomicBoolean create = new AtomicBoolean(false);
     private static ReentrantLock lockerCreator = new ReentrantLock();
     private static ConnectionPool instance;
     private BlockingQueue<ProxyConnection> freeConnections;
-    private Queue<ProxyConnection> giveAwayConnections;
+    private BlockingQueue<ProxyConnection> giveAwayConnections;
 
     static {
         try {
@@ -39,20 +37,20 @@ public class ConnectionPool {
                 fileName = resource.getFile();
             }else{
                 logger.log(Level.ERROR,"Resource is null! " + fileName);
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("Resource is null!");
             }
             properties.load(new FileReader(fileName));
         }catch (IOException e){
             logger.log(Level.FATAL,"File properties exception: " + e.getMessage());
-            throw new RuntimeException();
+            throw new RuntimeException("File properties exception." + e.getMessage());
         }
-        DEFAULT_POOL_SIZE = Integer.parseInt((String) properties.get("poolsize"));
+        POOL_SIZE = Integer.parseInt((String) properties.get("poolsize"));
     }
 
     private  ConnectionPool(){
-        freeConnections = new LinkedBlockingDeque<>(DEFAULT_POOL_SIZE);
-        giveAwayConnections = new ArrayDeque<>();
-        for(int i = 0; i < DEFAULT_POOL_SIZE; i++){
+        freeConnections = new LinkedBlockingDeque<>(POOL_SIZE);
+        giveAwayConnections = new LinkedBlockingDeque<>();
+        for(int i = 0; i < POOL_SIZE; i++){
             try{
                 ProxyConnection connection = new ProxyConnection(ConnectionFactory.createConnection());
                 boolean isCreated = freeConnections.offer(connection);
@@ -64,14 +62,15 @@ public class ConnectionPool {
         if(freeConnections.isEmpty()){
             logger.log(Level.FATAL,"There are not connections!");
             throw new RuntimeException();
-        }else if (freeConnections.size() < DEFAULT_POOL_SIZE){
+        }else if (freeConnections.size() < POOL_SIZE){
             int connectionSize = freeConnections.size();
-            while (connectionSize!=DEFAULT_POOL_SIZE){ //Question
+            while (connectionSize!= POOL_SIZE){ //Question
                 try {
                     ProxyConnection connection = new ProxyConnection(ConnectionFactory.createConnection());
                     freeConnections.offer(connection);
                 }catch (CustomException e){
                     logger.log(Level.ERROR,"Connection was not created " + e.getMessage());
+                    throw new RuntimeException("Connection was not created." + e.getMessage());
                 }
                 connectionSize++;
             }
@@ -111,7 +110,7 @@ public class ConnectionPool {
                 throw new CustomException("Illegal connection!");
             }
             ProxyConnection proxyConnection = (ProxyConnection) connection;
-            giveAwayConnections.remove(connection);
+            giveAwayConnections.remove(proxyConnection);
             freeConnections.put(proxyConnection);
         }catch (CustomException | InterruptedException e){
             logger.log(Level.ERROR,e.getMessage());
@@ -120,7 +119,7 @@ public class ConnectionPool {
     }
 
     public void destroyPool(){
-        for(int i = 0; i < DEFAULT_POOL_SIZE; i++){
+        for(int i = 0; i < POOL_SIZE; i++){
             try {
                 freeConnections.take().reallyClose();
                 logger.log(Level.DEBUG,"Connection closed!");
