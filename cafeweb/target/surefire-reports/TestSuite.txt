@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.372 sec <<< FAILURE!
+deleteByIdTest(by.epam.finalproject.model.dao.UserDiscountDaoTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at by.epam.finalproject.model.dao.UserDiscountDaoTest.deleteByIdTest(UserDiscountDaoTest.java:55)
+
+deleteTest(by.epam.finalproject.model.dao.UserDiscountDaoTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "by.epam.finalproject.model.entity.UserDiscount.equals(Object)" because "userDiscount" is null
+	at by.epam.finalproject.model.dao.impl.UserDiscountDao.delete(UserDiscountDao.java:95)
+	at by.epam.finalproject.model.dao.impl.UserDiscountDao.delete(UserDiscountDao.java:18)
+	at by.epam.finalproject.model.dao.UserDiscountDaoTest.deleteTest(UserDiscountDaoTest.java:59)
+
