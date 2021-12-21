@@ -130,10 +130,11 @@ public class ConnectionPool {
         deregisterDrivers();
     }
     private void deregisterDrivers(){
+        logger.log(Level.DEBUG, "Deregister driver method.");
         DriverManager.getDrivers().asIterator().forEachRemaining(driver -> {
             try {
                 DriverManager.deregisterDriver(driver);
-                logger.log(Level.DEBUG, "Deregister driver.");
+                logger.log(Level.INFO, "Deregister driver.");
             } catch (SQLException e) {
                 logger.log(Level.ERROR, "The driver was not removed");
             }

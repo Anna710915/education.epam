@@ -1,11 +1,10 @@
 package by.epam.finalproject.model.entity;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class User extends CustomEntity {
     public enum UserRole {
-        ADMIN(1), CLIENT(2);
+        ADMIN(1), CLIENT(2), GUEST(3);
         private long roleId;
 
         UserRole(long id){
@@ -45,6 +44,20 @@ public class User extends CustomEntity {
     public User(long userId, String firstName, String lastName, String login,
                 String password, String email, int phoneNumber, LocalDate birthday, long discountId, UserRole role, UserState state) {
         this.userId = userId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.birthday = birthday;
+        this.discountId = discountId;
+        this.role = role;
+        this.state = state;
+    }
+
+    public User(String firstName, String lastName, String login,
+                String password, String email, int phoneNumber, LocalDate birthday, long discountId, UserRole role, UserState state) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.login = login;

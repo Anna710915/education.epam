@@ -20,6 +20,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="jsf" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -27,6 +28,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -50,6 +59,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -60,6 +70,9 @@
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\java\by\epam\finalproject\model\dao\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp\pages" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp\pages\header" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\error" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -67,7 +80,7 @@
       <recent name="by.epam.finalproject.model.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UserDaoTest.findAllUsersTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.56">
     <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.service.impl.UserServiceImpl" />
       <module name="cafe" />
@@ -154,13 +167,13 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.56" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cafe/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="cafe:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/cafe" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
@@ -252,9 +265,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
         <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
         <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
-        <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
         <item itemvalue="Application.UserServiceImpl" />
         <item itemvalue="TestNG.UserDiscountDaoTest.findAllTest" />
       </list>
@@ -276,10 +289,25 @@
       <workItem from="1639687237615" duration="99000" />
       <workItem from="1639687800293" duration="2628000" />
       <workItem from="1639725571376" duration="202000" />
+      <workItem from="1639729056436" duration="260000" />
+      <workItem from="1639732064997" duration="38000" />
+      <workItem from="1639898093897" duration="9908000" />
+      <workItem from="1639908372933" duration="797000" />
+      <workItem from="1639909331272" duration="88000" />
+      <workItem from="1639915109975" duration="8881000" />
+      <workItem from="1639934197858" duration="17084000" />
+      <workItem from="1639983448740" duration="9545000" />
+      <workItem from="1640016949985" duration="5060000" />
+      <workItem from="1640024958199" duration="8836000" />
+      <workItem from="1640068969978" duration="3410000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
