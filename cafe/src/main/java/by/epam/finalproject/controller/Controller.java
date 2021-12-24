@@ -63,7 +63,6 @@ public class Controller extends HttpServlet {
     }
     @Override
     public void destroy(){
-        super.destroy();
         ConnectionPool.getInstance().destroyPool();
     }
 }

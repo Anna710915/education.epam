@@ -4,7 +4,10 @@
 
 <c:set var="absolutePath">${pageContext.request.contextPath}</c:set>
 <c:set var="current_page" value="${pageContext.request.requestURI}" scope="session"/>
-<fmt:setLocale value="${language}" scope="session"></fmt:setLocale>
+<c:choose>
+    <c:when test="${not empty language}"> <fmt:setLocale value="${language}" scope="session"/></c:when>
+    <c:when test="${empty language}"> <fmt:setLocale value="ru_RU" scope="session"/></c:when>
+</c:choose>
 <fmt:setBundle basename="language.language" var="rb"></fmt:setBundle>
 
 <fmt:message var="log" key="form.sign_in.login" bundle="${rb}"></fmt:message>
@@ -15,6 +18,17 @@
 <fmt:message var="user_blocked" key="form.user_status_blocked" bundle="${rb}"></fmt:message>
 <html>
 <head>
+    <script>
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+        window.onunload = function() {
+            null
+        };
+        history.pushState(null, null, document.URL);
+    </script>
     <title>Sign in</title>
 </head>
 <body>

@@ -12,13 +12,13 @@
 </head>
 <br>
 Request From -> ${pageContext.errorData.requestURI}
-<br/>
+<hr/>
 Exception -> ${pageContext.exception}
-<br/>
+<hr/>
 Exception Status -> ${pageContext.errorData.statusCode}
-<br/>
+<hr/>
 Servlet Name -> ${pageContext.errorData.servletName}
-<br/>
-<a href="index.jsp">backToStartPage</a>
+<hr/>
+<a href="${pageContext.request.contextPath}/index.jsp">backToStartPage</a>
 </body>
 </html>

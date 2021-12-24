@@ -2,7 +2,6 @@ package by.epam.finalproject.controller.command.impl;
 
 import by.epam.finalproject.controller.Router;
 import by.epam.finalproject.controller.command.Command;
-import by.epam.finalproject.exception.CommandException;
 import by.epam.finalproject.util.LanguageUtil;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -15,7 +14,6 @@ import javax.servlet.http.HttpSession;
 import static by.epam.finalproject.controller.Parameter.CURRENT_PAGE;
 import static by.epam.finalproject.controller.Parameter.LANGUAGE;
 
-import static by.epam.finalproject.controller.PathPage.ERROR_404;
 
 public class ChangeLanguageCommand implements Command {
     private static final Logger logger = LogManager.getLogger();
@@ -27,7 +25,7 @@ public class ChangeLanguageCommand implements Command {
         String currentPage = (String) session.getAttribute(CURRENT_PAGE);
         String language = request.getParameter(LANGUAGE);
         if(!LanguageUtil.isCorrectLanguage(language)){
-            router.setCurrentPage(ERROR_404);
+            router.setCurrentPage(currentPage);
             router.setRedirectType();
             return router;
         }

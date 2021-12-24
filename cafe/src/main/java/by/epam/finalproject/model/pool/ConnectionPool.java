@@ -121,7 +121,7 @@ public class ConnectionPool {
         for(int i = 0; i < POOL_SIZE; i++){
             try {
                 freeConnections.take().reallyClose();
-                logger.log(Level.DEBUG,"Connection closed!");
+                logger.log(Level.INFO,"Connection closed!");
             } catch (InterruptedException e) {
                 logger.log(Level.ERROR,"The thread was interrupted!" + e.getMessage());
                 Thread.currentThread().interrupt();

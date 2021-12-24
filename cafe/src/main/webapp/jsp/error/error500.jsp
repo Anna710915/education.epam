@@ -19,6 +19,6 @@ Exception Status -> ${pageContext.errorData.statusCode}
 <hr/>
 Servlet Name -> ${pageContext.errorData.servletName}
 <hr/>
-<a href="index.jsp">backToStartPage</a>
+<a href="${pageContext.request.contextPath}/index.jsp">backToStartPage</a>
 </body>
 </html>

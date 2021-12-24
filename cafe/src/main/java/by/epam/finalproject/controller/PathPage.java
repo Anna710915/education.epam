@@ -7,7 +7,9 @@ public final class PathPage {
     public static final String ERROR_404 = "/jsp/pages/error404.jsp";
     public static final String ERROR_500 = "/jsp/error/error500.jsp";
     public static final String SIGN_PAGE = "/jsp/pages/signIn.jsp";
+    public static final String START_PAGE = "/index.jsp";
     public static final String REGISTRATION_PAGE = "/jsp/pages/registration.jsp";
+
 
     private PathPage(){}
 }

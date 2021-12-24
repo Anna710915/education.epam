@@ -10,18 +10,30 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:set var="absolutePath">${pageContext.request.contextPath}</c:set>
-<c:set var="current_page">${pageContext.request.requestURI}</c:set>
-<fmt:setLocale value="${language}" scope="session"/>
-<fmt:setBundle basename="language.language" var="rb"/>
-
-<fmt:message key="header.brand" var="brand" bundle="${rb}"/>
-<fmt:message key="header.about_us" var="about_us" bundle="${rb}"/>
-<fmt:message key="header.contacts" var="contacts" bundle="${rb}"/>
-<fmt:message key="header.language" var="lang" bundle="${rb}"/>
-<fmt:message key="header.main" var="main" bundle="${rb}"/>
-<fmt:message key="header.sign_in" var="login" bundle="${rb}"/>
+<c:choose>
+    <c:when test="${not empty language}"> <fmt:setLocale value="${language}" scope="session"/></c:when>
+    <c:when test="${empty language}"> <fmt:setLocale value="${language = 'ru_RU'}" scope="session"/></c:when>
+</c:choose>
+<fmt:setBundle basename="language.language"/>
+<fmt:message key="header.brand" var="brand"/>
+<fmt:message key="header.about_us" var="about_us"/>
+<fmt:message key="header.contacts" var="contacts"/>
+<fmt:message key="header.language" var="lang"/>
+<fmt:message key="header.main" var="main"/>
+<fmt:message key="header.sign_in" var="login"/>
 <html>
 <head>
+<%--    <script>--%>
+<%--        function preventBack() {--%>
+<%--            window.history.forward();--%>
+<%--        }--%>
+
+<%--        setTimeout("preventBack()", 0);--%>
+<%--        window.onunload = function() {--%>
+<%--            null--%>
+<%--        };--%>
+<%--    </script>--%>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +65,7 @@
                   </c:when>
                   <c:otherwise>
                       <li>
-                          <a  href="${absolutePath}/controller?command=change_language&language=en_US">${lang}</a>
+                          <a  href="${absolutePath}/controller?command=change_language&language=ru_RU">${lang}</a>
                       </li>
                   </c:otherwise>
               </c:choose>

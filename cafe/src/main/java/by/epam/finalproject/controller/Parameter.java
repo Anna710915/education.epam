@@ -16,6 +16,7 @@ public final class Parameter {
     public static final String NOT_UNIQ_GMAIL = "not_uniq_gmail";
     public static final String NOT_UNIQ_LOGIN = "not_uniq_login";
     public static final String PASSWORD = "password";
+    public static final String USER = "user";
     public static final String USER_BIRTHDAY = "birthday";
     public static final String USER_FIRST_NAME = "first_name";
     public static final String USER_GMAIL = "gmail";

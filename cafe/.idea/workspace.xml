@@ -18,11 +18,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -81,6 +81,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.56">
+    <configuration name="PageFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.controller.filter.PageFilter" />
+      <module name="cafe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.finalproject.controller.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.service.impl.UserServiceImpl" />
       <module name="cafe" />
@@ -141,24 +154,6 @@
       <option name="PACKAGE_NAME" value="by.epam.finalproject.model.dao" />
       <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.dao.UserDaoTest" />
       <option name="METHOD_NAME" value="findUserByLoginAndPasswordTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDiscountDaoTest.findAllTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cafe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.finalproject.model.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.epam.finalproject.model.dao" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.dao.UserDiscountDaoTest" />
-      <option name="METHOD_NAME" value="findAllTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -257,19 +252,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.UserServiceImpl" />
+      <item itemvalue="Application.PageFilter" />
       <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
       <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
       <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
-      <item itemvalue="TestNG.UserDiscountDaoTest.findAllTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.56" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PageFilter" />
         <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
         <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
         <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
         <item itemvalue="Application.UserServiceImpl" />
-        <item itemvalue="TestNG.UserDiscountDaoTest.findAllTest" />
       </list>
     </recent_temporary>
   </component>
@@ -300,6 +295,14 @@
       <workItem from="1640016949985" duration="5060000" />
       <workItem from="1640024958199" duration="8836000" />
       <workItem from="1640068969978" duration="3410000" />
+      <workItem from="1640079787326" duration="2182000" />
+      <workItem from="1640083096055" duration="261000" />
+      <workItem from="1640083689490" duration="543000" />
+      <workItem from="1640085666265" duration="707000" />
+      <workItem from="1640114170144" duration="10976000" />
+      <workItem from="1640164628851" duration="10638000" />
+      <workItem from="1640265448988" duration="767000" />
+      <workItem from="1640266276809" duration="306000" />
     </task>
     <servers />
   </component>
