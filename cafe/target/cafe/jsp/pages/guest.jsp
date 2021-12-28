@@ -1,27 +1,40 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@taglib prefix="ctg" uri="customtags" %>
 <html>
-<header>
-    <%@include file="header/header.jsp"%>
-</header>
+
 <head>
-<%--    <script>--%>
-<%--        function preventBack() {--%>
-<%--            window.history.forward();--%>
-<%--        }--%>
+    <script>
+        function preventBack() {
+            window.history.forward();
+        }
 
-<%--        setTimeout("preventBack()", 0);--%>
-<%--        window.onunload = function() {--%>
-<%--            null--%>
-<%--        };--%>
+        setTimeout("preventBack()", 0);
+        window.onunload = function() {
+            null
+        };
 
-<%--    </script>--%>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <title>Title</title>
 </head>
 <body>
+<div class="page">
+    <header>
+        <%@include file="header/header.jsp"%>
+    </header>
 GUEST
+ <div class="text-center">
+    <ctg:footertag/>
+ </div>
+</div>
 </body>
 </html>

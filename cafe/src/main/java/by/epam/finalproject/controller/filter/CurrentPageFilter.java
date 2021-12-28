@@ -15,28 +15,37 @@ import static by.epam.finalproject.controller.Parameter.CURRENT_PAGE;
 
 public class CurrentPageFilter implements Filter {
     private static final Logger logger = LogManager.getLogger();
-    private static final String ROOT = "root";
-    private static final String INDEX_PAGE = "start_page";
-    private String root;
-    private String startPage;
-    public void init(FilterConfig config) throws ServletException {
-        root = config.getInitParameter(ROOT);
-        startPage = config.getInitParameter(INDEX_PAGE);
-        logger.log(Level.INFO,"init");
-    }
+    private static final String CONTROLLER_PATTERN = "/controller?";
 
-    public void destroy() {
-        root = null;
-        startPage = null;
+    public void init(FilterConfig config) throws ServletException {
+        logger.log(Level.INFO,"init");
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        HttpSession session = httpRequest.getSession();
-        String requestURI = httpRequest.getServletPath();
+        logger.log(Level.INFO,"Current page");
+        HttpServletRequest servletRequest = (HttpServletRequest) request;
+        HttpSession session = servletRequest.getSession();
+        String requestURI = servletRequest.getRequestURI();
         logger.log(Level.INFO,"request URI: " + requestURI);
+        String query = servletRequest.getQueryString();
+        if(query != null){
+            requestURI = CONTROLLER_PATTERN + query;
+        }
+        logger.log(Level.INFO, query);
         session.setAttribute(CURRENT_PAGE, requestURI);
         chain.doFilter(request, response);
+//        String uri = servletRequest.getRequestURI();
+//        logger.log(Level.INFO,uri);
+//        String path = servletRequest.getPathInfo();
+//        logger.log(Level.INFO, path);
+//        StringBuffer url = servletRequest.getRequestURL();
+//        logger.log(Level.INFO, url.toString());
+//        String contextPath = servletRequest.getContextPath();
+//        logger.log(Level.INFO, contextPath);
+//        String servPath = servletRequest.getServletPath();
+//        logger.log(Level.INFO, servPath);
+    }
+    public void destroy() {
     }
 }

@@ -8,6 +8,30 @@
   </welcome-file-list>
 
   <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>by.epam.finalproject.controller.filter.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>CurrentPageFilter</filter-name>
+    <filter-class>by.epam.finalproject.controller.filter.CurrentPageFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CurrentPageFilter</filter-name>
+    <url-pattern>*.jsp</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+
+  <filter>
     <filter-name>PageFilter</filter-name>
     <filter-class>by.epam.finalproject.controller.filter.PageFilter</filter-class>
   </filter>
@@ -25,37 +49,10 @@
     <url-pattern>/controller</url-pattern>
   </filter-mapping>
 
-  <filter>
-    <filter-name>CurrentPageFilter</filter-name>
-    <filter-class>by.epam.finalproject.controller.filter.CurrentPageFilter</filter-class>
-    <init-param>
-      <param-name>root</param-name>
-      <param-value>/jsp</param-value>
-    </init-param>
-    <init-param>
-      <param-name>start_page</param-name>
-      <param-value>/index.jsp</param-value>
-    </init-param>
-  </filter>
-  <filter-mapping>
-    <filter-name>CurrentPageFilter</filter-name>
-    <url-pattern>*.jsp</url-pattern>
-    <dispatcher>FORWARD</dispatcher>
-  </filter-mapping>
 
 
-  <filter>
-    <filter-name>EncodingFilter</filter-name>
-    <filter-class>by.epam.finalproject.controller.filter.EncodingFilter</filter-class>
-    <init-param>
-      <param-name>encoding</param-name>
-      <param-value>UTF-8</param-value>
-    </init-param>
-  </filter>
-  <filter-mapping>
-    <filter-name>EncodingFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
+
+
 
   <error-page>
     <error-code>403</error-code>
@@ -71,5 +68,10 @@
     <error-code>500</error-code>
     <location>/jsp/error/error500.jsp</location>
   </error-page>
-
+  <jsp-config>
+    <taglib>
+      <taglib-uri>customtags</taglib-uri>
+      <taglib-location>/WEB-INF/tld/taglib.tld</taglib-location>
+    </taglib>
+  </jsp-config>
 </web-app>

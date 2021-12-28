@@ -20,6 +20,7 @@ import static by.epam.finalproject.controller.Parameter.LOGIN;
 import static by.epam.finalproject.controller.Parameter.PASSWORD;
 import static by.epam.finalproject.controller.Parameter.ERROR_LOG_OR_PASS;
 import static by.epam.finalproject.controller.Parameter.USER_STATUS_BLOCKED;
+import static by.epam.finalproject.controller.Parameter.USER;
 
 import static by.epam.finalproject.controller.PathPage.ADMIN_PAGE;
 import static by.epam.finalproject.controller.PathPage.CLIENT_PAGE;
@@ -38,10 +39,12 @@ public class SignInCommand implements Command {
         Router router = new Router();
         String login = request.getParameter(LOGIN);
         String pass = request.getParameter(PASSWORD);
+        logger.log(Level.INFO,"login and pass" + login + pass);
         try {
             Optional<User> optionalUser = userService.signIn(login, pass);
             if (optionalUser.isPresent()) {
                 User user = optionalUser.get();
+                session.setAttribute(USER,user);
                 switch (user.getRole()){
                     case ADMIN -> {
                         router.setCurrentPage(ADMIN_PAGE);
@@ -51,6 +54,7 @@ public class SignInCommand implements Command {
                             session.setAttribute(USER_STATUS_BLOCKED,USER_BLOCKED_MESSAGE);
                             router.setCurrentPage(SIGN_PAGE);
                         }else {
+                        logger.log(Level.INFO,"Client page");
                             router.setCurrentPage(CLIENT_PAGE);
                         }
                     }
@@ -60,7 +64,6 @@ public class SignInCommand implements Command {
                 session.setAttribute(ERROR_LOG_OR_PASS, ERROR_INCORRECT_LOGIN_OR_PASSWORD_MESSAGE);
                 router.setCurrentPage(SIGN_PAGE);
             }
-            router.setRedirectType();
         } catch (ServiceException e) {
             throw new CommandException("Error during sign in", e);
         }

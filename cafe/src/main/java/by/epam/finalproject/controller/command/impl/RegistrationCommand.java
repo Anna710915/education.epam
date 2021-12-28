@@ -4,6 +4,7 @@ import by.epam.finalproject.controller.Router;
 import by.epam.finalproject.controller.command.Command;
 import by.epam.finalproject.exception.CommandException;
 import by.epam.finalproject.exception.ServiceException;
+import by.epam.finalproject.model.service.UserService;
 import by.epam.finalproject.model.service.impl.UserServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
@@ -11,24 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-import static by.epam.finalproject.controller.PathPage.REGISTRATION_PAGE;
-import static by.epam.finalproject.controller.PathPage.CLIENT_PAGE;
-
-import static by.epam.finalproject.controller.Parameter.INVALID_BIRTHDAY;
-import static by.epam.finalproject.controller.Parameter.INVALID_FIRST_NAME;
-import static by.epam.finalproject.controller.Parameter.INVALID_GMAIL;
-import static by.epam.finalproject.controller.Parameter.INVALID_LOGIN;
-import static by.epam.finalproject.controller.Parameter.INVALID_PASSWORD;
-import static by.epam.finalproject.controller.Parameter.INVALID_LAST_NAME;
-import static by.epam.finalproject.controller.Parameter.INVALID_PHONE_NUMBER;
-import static by.epam.finalproject.controller.Parameter.USER_FIRST_NAME;
-import static by.epam.finalproject.controller.Parameter.USER_BIRTHDAY;
-import static by.epam.finalproject.controller.Parameter.USER_GMAIL;
-import static by.epam.finalproject.controller.Parameter.USER_LAST_NAME;
-import static by.epam.finalproject.controller.Parameter.USER_PHONE_NUMBER;
-import static by.epam.finalproject.controller.Parameter.LOGIN;
-import static by.epam.finalproject.controller.Parameter.PASSWORD;
-
+import static by.epam.finalproject.controller.Parameter.*;
+import static by.epam.finalproject.controller.PathPage.*;
 import static by.epam.finalproject.controller.PropertiesKey.INVALID_BIRTHDAY_MESSAGE;
 import static by.epam.finalproject.controller.PropertiesKey.INVALID_FIRST_MESSAGE;
 import static by.epam.finalproject.controller.PropertiesKey.INVALID_GMAIL_MESSAGE;
@@ -38,6 +23,7 @@ import static by.epam.finalproject.controller.PropertiesKey.INVALID_PHONE_NUMBER
 import static by.epam.finalproject.controller.PropertiesKey.INVALID_LAST_MESSAGE;
 
 public class RegistrationCommand implements Command {
+    private UserService service = UserServiceImpl.getInstance();
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
         Map<String,String> mapData = new HashMap<>();
@@ -45,15 +31,14 @@ public class RegistrationCommand implements Command {
         mapData.put(USER_LAST_NAME, request.getParameter(USER_LAST_NAME));
         mapData.put(LOGIN, request.getParameter(LOGIN));
         mapData.put(PASSWORD, request.getParameter(PASSWORD));
-        mapData.put(USER_GMAIL, request.getParameter(USER_GMAIL));
+        mapData.put(USER_EMAIL, request.getParameter(USER_EMAIL));
         mapData.put(USER_PHONE_NUMBER, request.getParameter(USER_PHONE_NUMBER));
         mapData.put(USER_BIRTHDAY, request.getParameter(USER_BIRTHDAY));
-        UserServiceImpl service = UserServiceImpl.getInstance();
         Router router = new Router();
         try {
             if (service.userRegistration(mapData)) {
-                router.setCurrentPage(CLIENT_PAGE);
                 router.setRedirectType();
+                router.setCurrentPage(SIGN_PAGE);
             } else {
                 for (String key : mapData.keySet()) {
                     String currentKey = mapData.get(key);
@@ -67,6 +52,7 @@ public class RegistrationCommand implements Command {
                         case INVALID_PHONE_NUMBER -> request.setAttribute(INVALID_PHONE_NUMBER, INVALID_PHONE_NUMBER_MESSAGE);
                     }
                 }
+                router.setRedirectType();
                 router.setCurrentPage(REGISTRATION_PAGE);
             }
         } catch (ServiceException e) {

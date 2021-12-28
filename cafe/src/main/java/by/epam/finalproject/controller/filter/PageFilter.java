@@ -14,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Set;
 
+import static by.epam.finalproject.controller.Parameter.CURRENT_PAGE;
 import static by.epam.finalproject.controller.Parameter.USER;
 import static by.epam.finalproject.controller.PathPage.ERROR_404;
 import static by.epam.finalproject.controller.PathPage.START_PAGE;
@@ -38,6 +39,7 @@ public class PageFilter implements Filter {
         User user = (User) session.getAttribute(USER);
         if(user != null){
             userRole = user.getRole();
+            logger.log(Level.INFO, userRole.toString());
         }
         boolean isCorrect;
         Set<String> pages;
@@ -48,6 +50,7 @@ public class PageFilter implements Filter {
             }
             case CLIENT -> {
                 pages = PagePermission.CLIENT.getUserPages();
+                logger.log(Level.INFO,pages);
                 isCorrect = pages.stream().anyMatch(requestURI::contains);
             }
             default -> {

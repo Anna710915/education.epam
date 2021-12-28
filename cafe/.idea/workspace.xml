@@ -20,9 +20,9 @@
       <list>
         <option value="Interface" />
         <option value="jsf" />
+        <option value="Enum" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -56,9 +56,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/by/epam/finalproject/util/mail" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
@@ -94,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.service.impl.UserServiceImpl" />
+    <configuration name="Validator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.Validator" />
       <module name="cafe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.finalproject.model.service.impl.*" />
+          <option name="PATTERN" value="by.epam.finalproject.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,8 +251,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UserServiceImpl" />
       <item itemvalue="Application.PageFilter" />
+      <item itemvalue="Application.Validator" />
       <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
       <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
       <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
@@ -260,11 +260,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PageFilter" />
+        <item itemvalue="Application.Validator" />
         <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
+        <item itemvalue="Application.PageFilter" />
         <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
         <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
-        <item itemvalue="Application.UserServiceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -303,6 +303,14 @@
       <workItem from="1640164628851" duration="10638000" />
       <workItem from="1640265448988" duration="767000" />
       <workItem from="1640266276809" duration="306000" />
+      <workItem from="1640460763704" duration="11870000" />
+      <workItem from="1640505394505" duration="6966000" />
+      <workItem from="1640514747573" duration="10515000" />
+      <workItem from="1640547886044" duration="8536000" />
+      <workItem from="1640588695499" duration="3120000" />
+      <workItem from="1640594666872" duration="7270000" />
+      <workItem from="1640635431234" duration="6620000" />
+      <workItem from="1640675764426" duration="93000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,8 @@ import by.epam.finalproject.exception.DaoException;
 import by.epam.finalproject.model.dao.impl.UserDaoImpl;
 import by.epam.finalproject.model.entity.User;
 import by.epam.finalproject.model.pool.ConnectionPool;
+import by.epam.finalproject.util.PasswordEncryption;
+import by.epam.finalproject.validator.Validator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -25,7 +27,8 @@ public class UserDaoTest {
 
     @Test
     public void findUserByLoginAndPasswordTest() throws DaoException {
-        Optional<User> actual = userDao.findUserByLoginAndPassword("2Merkul8","16fduecn2002");
+        String encrypt = PasswordEncryption.md5Apache("16fduecn2002");
+        Optional<User> actual = userDao.findUserByLoginAndPassword("2Merkul8",encrypt);
         assertTrue(actual.isPresent());
     }
     @Test

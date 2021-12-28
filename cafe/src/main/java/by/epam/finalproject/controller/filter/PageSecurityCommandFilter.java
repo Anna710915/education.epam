@@ -70,17 +70,18 @@ public class PageSecurityCommandFilter implements Filter {
         boolean isCorrect = Arrays.stream(CommandType.values())
                         .anyMatch(commandType -> command.equalsIgnoreCase(commandType.toString()));
 
-        if(isCorrect && !commands.contains(command)){
+        if(isCorrect && !commands.contains(command.toUpperCase())){
             logger.log(Level.INFO,"isCorrect = " + isCorrect + "command = " + command);
             httpServletResponse.setStatus(HttpServletResponse.SC_FORBIDDEN);
             return;
         }
-        if (!commands.contains(command)){
+        if (!commands.contains(command.toUpperCase())){
             logger.log(Level.INFO, "command = " + command);
             request.getRequestDispatcher(ERROR_404)
                     .forward(httpServletRequest,httpServletResponse);
             return;
         }
+        logger.log(Level.INFO, "Chain continue");
         chain.doFilter(request, response);
     }
 

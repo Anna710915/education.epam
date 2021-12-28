@@ -1,0 +1,22 @@
+ <li class="dropdown nav-item">
+        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"><span class="caret"></span> ${menu}</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">insert</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"
+           href="#"><fmt:message key="header.orders"/> </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"
+           href="${absolutePath}/controller?command=find_all_users"><fmt:message key="header.users"/></a>
+    </li>
+    <li class="nav-item">
+        <a  class="nav-link"
+           href="#"><fmt:message key="header.registration"/> </a>
+    </li>
+    <li class="nav-item">
+        <a  class="nav-link"
+           href="#">${profile}</a>
+    </li>

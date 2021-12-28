@@ -1,0 +1,15 @@
+<li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"><span class="caret"></span> ${menu}</a>
+    <ul class="dropdown-menu">
+        <li><a href="#">pizza</a></li>
+    </ul>
+</li>
+<li class="nav-item">
+    <a class="nav-link"
+       href="#">${basket}</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"
+       href="#">${profile}</a>
+</li>
+

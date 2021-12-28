@@ -1,0 +1,15 @@
+.footer {
+    padding:10px 0px;
+    margin: 0px 0px;
+    background-color:ghostwhite;
+    color:#4b4c4d;
+}
+.footer{
+    margin-top: auto;
+}
+.page{
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}

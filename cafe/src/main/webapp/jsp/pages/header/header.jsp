@@ -21,6 +21,10 @@
 <fmt:message key="header.language" var="lang"/>
 <fmt:message key="header.main" var="main"/>
 <fmt:message key="header.sign_in" var="login"/>
+<fmt:message key="header.basket" var="basket"/>
+<fmt:message key="header.menu" var="menu"/>
+<fmt:message key="header.profile" var="profile"/>
+<fmt:message key="header.sign_out" var="logout"/>
 <html>
 <head>
     <script>
@@ -34,45 +38,86 @@
         };
     </script>
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Title</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-default">
-    <div class="navbar-header">
-      ${brand}
-    </div>
-    <div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">${main}</a></li>
-        <li><a  href="#">${about_us}</a></li>
-        <li><a  href="#">${contacts}</a></li>
-              <c:choose>
-                  <c:when test="${language eq 'ru_RU'}">
-                    <li>
-                      <a  href="${absolutePath}/controller?command=change_language&language=en_US">${lang}</a>
-                    </li>
-                  </c:when>
-                  <c:when test="${language eq 'en_US'}">
-                      <li>
-                          <a  href="${absolutePath}/controller?command=change_language&language=ru_RU">${lang}</a>
-                      </li>
-                  </c:when>
-                  <c:otherwise>
-                      <li>
-                          <a  href="${absolutePath}/controller?command=change_language&language=ru_RU">${lang}</a>
-                      </li>
-                  </c:otherwise>
-              </c:choose>
-        <li><a  href="${absolutePath}/jsp/pages/signIn.jsp">${login}</a></li>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">${brand}</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">${main}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">${about_us}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">${contacts}</a></li>
+
+          <c:choose>
+              <c:when test="${user.role eq 'ADMIN'}"><%@include file="fragment/admin_header.jspf" %></c:when>
+              <c:when test="${user.role eq 'CLIENT'}"><%@include file="fragment/client_header.jspf" %></c:when>
+          </c:choose>
+
+          <c:choose>
+              <c:when test="${language eq 'ru_RU'}">
+                  <li class="nav-item">
+                      <a class="nav-link" href="${absolutePath}/controller?command=change_language&language=en_US">${lang}</a>
+                  </li>
+              </c:when>
+              <c:when test="${language eq 'en_US'}">
+                  <li class="nav-item">
+                      <a class="nav-link" href="${absolutePath}/controller?command=change_language&language=ru_RU">${lang}</a>
+                  </li>
+              </c:when>
+              <c:otherwise>
+                  <li class="nav-item">
+                      <a class="nav-link" href="${absolutePath}/controller?command=change_language&language=ru_RU">${lang}</a>
+                  </li>
+              </c:otherwise>
+          </c:choose>
       </ul>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+            <c:choose>
+                <c:when test="${user.role eq 'ADMIN' or user.role eq 'CLIENT'}">
+                    <li class="nav-item"><a class="nav-link" href="${absolutePath}/controller?command=sign_out"> ${logout}</a></li>
+                </c:when>
+                <c:otherwise>
+                        <li class="nav-item"><a class="nav-link" href="${absolutePath}/jsp/pages/signIn.jsp">${login}</a></li>
+                </c:otherwise>
+            </c:choose>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
+<%--<nav class="navbar navbar-expand-lg navbar-light bg-light">--%>
+<%--    <div class="container-fluid">--%>
+<%--        <a class="navbar-brand" href="#">Navbar</a>--%>
+<%--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">--%>
+<%--            <span class="navbar-toggler-icon"></span>--%>
+<%--        </button>--%>
+<%--        <div class="collapse navbar-collapse" id="navbarNav">--%>
+<%--            <ul class="navbar-nav">--%>
+<%--                <li class="nav-item">--%>
+<%--                    <a class="nav-link active" aria-current="page" href="#">Home</a>--%>
+<%--                </li>--%>
+<%--                <li class="nav-item">--%>
+<%--                    <a class="nav-link" href="#">Features</a>--%>
+<%--                </li>--%>
+<%--                <li class="nav-item">--%>
+<%--                    <a class="nav-link" href="#">Pricing</a>--%>
+<%--                </li>--%>
+<%--                <li class="nav-item">--%>
+<%--                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>--%>
+<%--                </li>--%>
+<%--            </ul>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</nav>--%>
 </body>
 </html>

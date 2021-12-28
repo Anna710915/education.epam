@@ -9,6 +9,7 @@ public final class PathPage {
     public static final String SIGN_PAGE = "/jsp/pages/signIn.jsp";
     public static final String START_PAGE = "/index.jsp";
     public static final String REGISTRATION_PAGE = "/jsp/pages/registration.jsp";
+    public static final String USERS_PAGE = "/jsp/pages/admin/users.jsp";
 
 
     private PathPage(){}
