@@ -10,17 +10,24 @@ public enum PagePermission {
             GUEST_PAGE,
             ERROR_404,
             REGISTRATION_PAGE,
-            USERS_PAGE)),
+            USERS_PAGE,
+            PROFILE_PAGE,
+            MENU_PAGE,
+            ADD_MENU_PAGE)),
     CLIENT(Set.of(START_PAGE,
             CLIENT_PAGE,
             GUEST_PAGE,
             SIGN_PAGE,
-            ERROR_404)),
+            ERROR_404,
+            PROFILE_PAGE,
+            DISCOUNT_PAGE,
+            MENU_PAGE)),
     GUEST(Set.of(START_PAGE,
             GUEST_PAGE,
             SIGN_PAGE,
             ERROR_404,
             REGISTRATION_PAGE));
+
     Set<String> userPages;
     PagePermission(Set<String> userPages){
         this.userPages = userPages;

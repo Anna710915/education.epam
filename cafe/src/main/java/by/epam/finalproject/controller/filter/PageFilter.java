@@ -41,6 +41,7 @@ public class PageFilter implements Filter {
             userRole = user.getRole();
             logger.log(Level.INFO, userRole.toString());
         }
+        logger.log(Level.INFO,userRole);
         boolean isCorrect;
         Set<String> pages;
         switch (userRole){

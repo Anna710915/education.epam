@@ -5,7 +5,6 @@ import by.epam.finalproject.model.dao.impl.UserDaoImpl;
 import by.epam.finalproject.model.entity.User;
 import by.epam.finalproject.model.pool.ConnectionPool;
 import by.epam.finalproject.util.PasswordEncryption;
-import by.epam.finalproject.validator.Validator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,7 +32,7 @@ public class UserDaoTest {
     }
     @Test
     public void findUserByIdTest() throws DaoException {
-        User actual = userDao.findEntityById(4);
+        User actual = userDao.findEntityById(1);
         assertNotNull(actual);
     }
     @Test

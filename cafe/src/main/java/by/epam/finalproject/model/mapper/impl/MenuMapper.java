@@ -35,11 +35,11 @@ public class MenuMapper implements CustomRowMapper<Menu> {
             menu.setCookingTime(resultSet.getTime(COOKING_TIME).toLocalTime());
             menu.setDiscount(resultSet.getBigDecimal(DISCOUNT));
             menu.setPrice(resultSet.getBigDecimal(PRICE));
-            menu.setSection(Menu.Section.valueOf(resultSet.getString(SECTION)
-                    .trim().toUpperCase()));
+            menu.setSectionId(resultSet.getLong(SECTION));
             optionalMenu = Optional.of(menu);
         } catch (SQLException e) {
             optionalMenu = Optional.empty();
+
         }
         return optionalMenu;
     }

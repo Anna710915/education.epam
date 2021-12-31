@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,6 +23,9 @@ import static by.epam.finalproject.controller.PathPage.ERROR_500;
 import static by.epam.finalproject.controller.Parameter.COMMAND;
 
 @WebServlet(urlPatterns = "/controller")
+@MultipartConfig(fileSizeThreshold = 1024 * 1024,
+        maxFileSize = 1024 * 1024 * 5,
+        maxRequestSize = 1024 * 1024 * 25)
 public class Controller extends HttpServlet {
     private static final Logger logger = LogManager.getLogger();
 
@@ -60,9 +64,5 @@ public class Controller extends HttpServlet {
             router.setCurrentPage(ERROR_500);
             response.sendRedirect(router.getCurrentPage());
         }
-    }
-    @Override
-    public void destroy(){
-        ConnectionPool.getInstance().destroyPool();
     }
 }

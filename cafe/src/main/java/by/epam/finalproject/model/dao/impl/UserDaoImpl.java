@@ -24,8 +24,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
     private static final Logger logger = LogManager.getLogger();
     private static final String SQL_SELECT_ALL_USERS = """
             SELECT user_id, first_name, last_name, login, user_password, email, phone, birthday,
-            personal_discounts.discount, state, role_name FROM users
-            JOIN personal_discounts ON personal_discounts.discount_id = users.discount_id
+            discount_id, state, role_name FROM users
             JOIN user_state ON user_state.state_id = users.state_id
             JOIN user_role ON user_role.role_id = users.role_id""";
     private static final String SQL_INSERT_NEW_USER = """ 
@@ -33,8 +32,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             discount_id, state_id, role_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""";
     private static final String SQL_SELECT_USER_BY_ID = """
             SELECT user_id, first_name, last_name, login, user_password, email, phone, birthday, 
-            personal_discounts.discount, state, role_name FROM users
-            JOIN personal_discounts ON personal_discounts.discount_id = users.discount_id
+            discount_id, state, role_name FROM users
             JOIN user_state ON user_state.state_id = users.state_id
             JOIN user_role ON user_role.role_id = users.role_id
             WHERE user_id = (?)""";
@@ -54,20 +52,17 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             UPDATE users SET state_id = (?) WHERE user_id = (?)""";
     private static final String SQL_SELECT_USER_BY_LOGIN = """
             SELECT users.user_id, first_name, last_name, login, user_password, email, phone, birthday, 
-            personal_discounts.discount, state, role_name FROM users
-            JOIN personal_discounts ON personal_discounts.discount_id = users.discount_id
+            discount_id, state, role_name FROM users
             JOIN user_state ON user_state.state_id = users.state_id
             JOIN user_role ON user_role.role_id = users.role_id WHERE login = (?)""";
     private static final String SQL_SELECT_USER_BY_PHONE_NUMBER = """
             SELECT users.user_id, first_name, last_name, login, user_password, email, phone, birthday, 
-            personal_discounts.discount, state, role_name FROM users
-            JOIN personal_discounts ON personal_discounts.discount_id = users.discount_id
+            discount_id, state, role_name FROM users
             JOIN user_state ON user_state.state_id = users.state_id
             JOIN user_role ON user_role.role_id = users.role_id WHERE phone = (?)""";
     private static final String SQL_SELECT_USER_BY_EMAIL = """
             SELECT users.user_id, first_name, last_name, login, user_password, email, phone, birthday, 
-            personal_discounts.discount, state, role_name FROM users
-            JOIN personal_discounts ON personal_discounts.discount_id = users.discount_id
+            discount_id, state, role_name FROM users
             JOIN user_state ON user_state.state_id = users.state_id
             JOIN user_role ON user_role.role_id = users.role_id WHERE email = (?)""";
     private static final String SQL_SELECT_USER_STATE_BY_ID = """
@@ -75,8 +70,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             WHERE users.user_id = (?)""";
     private static final String SQL_SELECT_USER_BY_LOGIN_AND_PASSWORD = """
             SELECT users.user_id, first_name, last_name, login, user_password, email, phone, birthday, 
-            personal_discounts.discount, state, role_name FROM users
-            JOIN personal_discounts ON personal_discounts.discount_id = users.discount_id
+            discount_id, state, role_name FROM users
             JOIN user_state ON user_state.state_id = users.state_id
             JOIN user_role ON user_role.role_id = users.role_id WHERE login = (?) AND user_password = (?)""";
 

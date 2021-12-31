@@ -18,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="jsf" />
         <option value="Enum" />
+        <option value="jsf" />
+        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
       </list>
@@ -70,10 +70,11 @@
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\java\by\epam\finalproject\model\dao\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\picture" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\resources\context" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\resources" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp\pages" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp" />
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp\pages\header" />
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\error" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.epam.finalproject.util" />
@@ -81,33 +82,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.56">
-    <configuration name="PageFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.controller.filter.PageFilter" />
-      <module name="cafe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.finalproject.controller.filter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Validator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.Validator" />
-      <module name="cafe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.finalproject.validator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.findAllUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuDaoTest.findAllMenuFirstTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cafe" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +91,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.epam.finalproject.model.dao" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="findAllUsersTest" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.dao.MenuDaoTest" />
+      <option name="METHOD_NAME" value="findAllMenuFirstTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,17 +118,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.findUserByLoginAndPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidatorTest.isCorrectDiscountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cafe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.finalproject.model.dao.*" />
+          <option name="PATTERN" value="by.epam.finalproject.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.epam.finalproject.model.dao" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="findUserByLoginAndPasswordTest" />
+      <option name="PACKAGE_NAME" value="by.epam.finalproject.validator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.ValidatorTest" />
+      <option name="METHOD_NAME" value="isCorrectDiscountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorTest.isCorrectProductNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cafe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.finalproject.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.epam.finalproject.validator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.ValidatorTest" />
+      <option name="METHOD_NAME" value="isCorrectProductNameTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorTest.isCorrectProductWeight" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cafe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.finalproject.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.epam.finalproject.validator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.ValidatorTest" />
+      <option name="METHOD_NAME" value="isCorrectProductWeight" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -251,19 +262,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PageFilter" />
-      <item itemvalue="Application.Validator" />
+      <item itemvalue="TestNG.MenuDaoTest.findAllMenuFirstTest" />
       <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
-      <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
-      <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
+      <item itemvalue="TestNG.ValidatorTest.isCorrectProductNameTest" />
+      <item itemvalue="TestNG.ValidatorTest.isCorrectProductWeight" />
+      <item itemvalue="TestNG.ValidatorTest.isCorrectDiscountTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.56" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Validator" />
-        <item itemvalue="TestNG.UserDaoTest.findUserByLoginAndPasswordTest" />
-        <item itemvalue="Application.PageFilter" />
-        <item itemvalue="TestNG.UserDaoTest.findAllUsersTest" />
+        <item itemvalue="TestNG.ValidatorTest.isCorrectDiscountTest" />
+        <item itemvalue="TestNG.ValidatorTest.isCorrectProductWeight" />
+        <item itemvalue="TestNG.ValidatorTest.isCorrectProductNameTest" />
+        <item itemvalue="TestNG.MenuDaoTest.findAllMenuFirstTest" />
         <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
       </list>
     </recent_temporary>
@@ -311,6 +322,15 @@
       <workItem from="1640594666872" duration="7270000" />
       <workItem from="1640635431234" duration="6620000" />
       <workItem from="1640675764426" duration="93000" />
+      <workItem from="1640678389100" duration="212000" />
+      <workItem from="1640678952683" duration="4487000" />
+      <workItem from="1640696953241" duration="9580000" />
+      <workItem from="1640710731299" duration="14457000" />
+      <workItem from="1640854607595" duration="18937000" />
+      <workItem from="1640873774083" duration="2841000" />
+      <workItem from="1640877585628" duration="6014000" />
+      <workItem from="1640889656491" duration="11265000" />
+      <workItem from="1640901408093" duration="1803000" />
     </task>
     <servers />
   </component>

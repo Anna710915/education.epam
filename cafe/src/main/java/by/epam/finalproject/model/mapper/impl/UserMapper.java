@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 import static by.epam.finalproject.model.mapper.impl.UserDiscountMapper.DISCOUNT;
+import static by.epam.finalproject.model.mapper.impl.UserDiscountMapper.DISCOUNT_ID;
 
 public class UserMapper implements CustomRowMapper<User> {
     public static final String USER_ID = "user_id";
@@ -18,7 +19,6 @@ public class UserMapper implements CustomRowMapper<User> {
     public static final String EMAIL = "email";
     public static final String PHONE_NUMBER = "phone";
     public static final String BIRTHDAY = "birthday";
-    public static final String REGISTRATION_DATE = "registration_date";
     public static final String USER_STATE = "state";
     public static final String USER_ROLE = "role_name";
 
@@ -35,7 +35,7 @@ public class UserMapper implements CustomRowMapper<User> {
             user.setEmail(resultSet.getString(EMAIL));
             user.setPhoneNumber(resultSet.getInt(PHONE_NUMBER));
             user.setBirthday(resultSet.getDate(BIRTHDAY).toLocalDate());
-            user.setDiscountId(resultSet.getLong(DISCOUNT));
+            user.setDiscountId(resultSet.getLong(DISCOUNT_ID));
             user.setState(User.UserState.valueOf(resultSet.getString(USER_STATE)
                     .trim().toUpperCase()));
             user.setRole(User.UserRole.valueOf(resultSet.getString(USER_ROLE)

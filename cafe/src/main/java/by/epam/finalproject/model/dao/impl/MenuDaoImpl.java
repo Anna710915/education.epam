@@ -6,17 +6,25 @@ import by.epam.finalproject.model.dao.MenuDao;
 import by.epam.finalproject.model.entity.Menu;
 import by.epam.finalproject.model.entity.Order;
 import by.epam.finalproject.model.mapper.impl.MenuMapper;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Time;
+import java.time.LocalTime;
 import java.util.*;
 
+import static by.epam.finalproject.controller.Parameter.*;
+import static by.epam.finalproject.controller.Parameter.PRODUCT_SECTION;
 import static by.epam.finalproject.model.mapper.impl.MenuMapper.DISH_NUMBER;
 import static by.epam.finalproject.model.mapper.impl.MenuMapper.PICTURE_PATH;
 
 public class MenuDaoImpl extends AbstractDao<Menu> implements MenuDao {
+    private static final Logger logger = LogManager.getLogger();
     private static final String SQL_SELECT_ALL_MENU = """
             SELECT food_id, name_food, picture_path, composition, weight,
             calories, cooking_time, discount, price, section_id FROM menu""";
@@ -44,7 +52,7 @@ public class MenuDaoImpl extends AbstractDao<Menu> implements MenuDao {
             WHERE name_food = (?)""";
     private static final String SQL_SELECT_ALL_ORDER_FOOD = """
             SELECT food_id, name_food, picture_path, composition, weight,
-            calories, cooking_time, discount, price, section_id, dish_number FROM menu
+            calories, cooking_time, discount, price,  section_id, dish_number FROM menu
             JOIN orders_menu ON orders_menu.food_id = menu.food_id
             WHERE orders_menu.order_id = (?)""";
 
@@ -59,6 +67,7 @@ public class MenuDaoImpl extends AbstractDao<Menu> implements MenuDao {
                 Optional<Menu> optionalMenu = new MenuMapper().mapRow(resultSet);
                 if(optionalMenu.isPresent()) {
                     menuList.add(optionalMenu.get());
+                    logger.log(Level.INFO,"Present");
                 }
             }
         } catch (SQLException e) {
@@ -129,10 +138,10 @@ public class MenuDaoImpl extends AbstractDao<Menu> implements MenuDao {
             statement.setString(3,entity.getComposition());
             statement.setDouble(4,entity.getWeight());
             statement.setDouble(5,entity.getCalories());
-            statement.setTime(6, Time.valueOf(entity.getCookingTime().toString()));
+            statement.setTime(6, Time.valueOf(entity.getCookingTime()));
             statement.setBigDecimal(7,entity.getDiscount());
             statement.setBigDecimal(8,entity.getPrice());
-            statement.setLong(9,entity.getSection().getSectionId());
+            statement.setLong(9,entity.getSectionId());
             return statement.executeUpdate() != 0 ? true : false;
         } catch (SQLException e) {
             throw new DaoException(e);
@@ -140,7 +149,6 @@ public class MenuDaoImpl extends AbstractDao<Menu> implements MenuDao {
             close(statement);
         }
     }
-
     @Override
     public Menu update(Menu entity) throws DaoException {
         PreparedStatement statement = null;
@@ -156,7 +164,7 @@ public class MenuDaoImpl extends AbstractDao<Menu> implements MenuDao {
             statement.setTime(6, Time.valueOf(entity.getCookingTime().toString()));
             statement.setBigDecimal(7,entity.getDiscount());
             statement.setBigDecimal(8,entity.getPrice());
-            statement.setLong(9,entity.getSection().getSectionId());
+            statement.setLong(9,entity.getSectionId());
             statement.setLong(10,entity.getFoodId());
             return statement.executeUpdate() != 0 ? menu : null;
         } catch (SQLException e) {

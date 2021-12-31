@@ -45,6 +45,7 @@ public class SignInCommand implements Command {
             if (optionalUser.isPresent()) {
                 User user = optionalUser.get();
                 session.setAttribute(USER,user);
+                logger.log(Level.INFO,"Sign in" + user.getRole());
                 switch (user.getRole()){
                     case ADMIN -> {
                         router.setCurrentPage(ADMIN_PAGE);
@@ -61,7 +62,7 @@ public class SignInCommand implements Command {
                 }
             } else {
                 logger.log(Level.DEBUG,"SignInCommand");
-                session.setAttribute(ERROR_LOG_OR_PASS, ERROR_INCORRECT_LOGIN_OR_PASSWORD_MESSAGE);
+                request.setAttribute(ERROR_LOG_OR_PASS, ERROR_INCORRECT_LOGIN_OR_PASSWORD_MESSAGE);
                 router.setCurrentPage(SIGN_PAGE);
             }
         } catch (ServiceException e) {

@@ -5,19 +5,6 @@ import java.time.LocalTime;
 
 public class Menu extends CustomEntity {
 
-    public enum Section {
-        PIZZA(1), SUSHI(2);
-        int sectionId;
-
-        Section(int sectionId){
-            this.sectionId = sectionId;
-        }
-
-        public int getSectionId() {
-            return sectionId;
-        }
-    }
-
     private long foodId;
     private String nameFood;
     private String picturePath;
@@ -27,13 +14,13 @@ public class Menu extends CustomEntity {
     private LocalTime cookingTime;
     private BigDecimal discount;
     private BigDecimal price;
-    private Section section;
+    private long sectionId;
 
     public Menu(){}
 
     public Menu(long foodId, String nameFood, String picturePath, String composition,
                 double weight, double calories, LocalTime cookingTime, BigDecimal discount,
-                BigDecimal price, Section section) {
+                BigDecimal price, long sectionId) {
         this.foodId = foodId;
         this.nameFood = nameFood;
         this.picturePath = picturePath;
@@ -43,7 +30,21 @@ public class Menu extends CustomEntity {
         this.cookingTime = cookingTime;
         this.discount = discount;
         this.price = price;
-        this.section = section;
+        this.sectionId = sectionId;
+    }
+
+    public Menu(String nameFood, String picturePath, String composition,
+                double weight, double calories, LocalTime cookingTime,
+                BigDecimal discount, BigDecimal price, long sectionId) {
+        this.nameFood = nameFood;
+        this.picturePath = picturePath;
+        this.composition = composition;
+        this.weight = weight;
+        this.calories = calories;
+        this.cookingTime = cookingTime;
+        this.discount = discount;
+        this.price = price;
+        this.sectionId = sectionId;
     }
 
     public long getFoodId() {
@@ -118,11 +119,11 @@ public class Menu extends CustomEntity {
         this.price = price;
     }
 
-    public Section getSection() {
-        return section;
+    public long getSectionId() {
+        return sectionId;
     }
 
-    public void setSection(Section section) {
-        this.section = section;
+    public void setSectionId(long sectionId) {
+        this.sectionId = sectionId;
     }
 }

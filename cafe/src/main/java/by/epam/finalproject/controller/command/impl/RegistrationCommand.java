@@ -14,16 +14,11 @@ import java.util.Map;
 
 import static by.epam.finalproject.controller.Parameter.*;
 import static by.epam.finalproject.controller.PathPage.*;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_BIRTHDAY_MESSAGE;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_FIRST_MESSAGE;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_GMAIL_MESSAGE;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_LOGIN_MESSAGE;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_PASSWORD_MESSAGE;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_PHONE_NUMBER_MESSAGE;
-import static by.epam.finalproject.controller.PropertiesKey.INVALID_LAST_MESSAGE;
+import static by.epam.finalproject.controller.PropertiesKey.*;
 
 public class RegistrationCommand implements Command {
     private UserService service = UserServiceImpl.getInstance();
+
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
         Map<String,String> mapData = new HashMap<>();
@@ -41,18 +36,20 @@ public class RegistrationCommand implements Command {
                 router.setCurrentPage(SIGN_PAGE);
             } else {
                 for (String key : mapData.keySet()) {
-                    String currentKey = mapData.get(key);
-                    switch (currentKey) {
+                    String currentValue = mapData.get(key);
+                    switch (currentValue) {
                         case INVALID_BIRTHDAY -> request.setAttribute(INVALID_BIRTHDAY, INVALID_BIRTHDAY_MESSAGE);
                         case INVALID_FIRST_NAME -> request.setAttribute(INVALID_FIRST_NAME, INVALID_FIRST_MESSAGE);
-                        case INVALID_GMAIL -> request.setAttribute(INVALID_GMAIL, INVALID_GMAIL_MESSAGE);
+                        case INVALID_EMAIL -> request.setAttribute(INVALID_EMAIL, INVALID_EMAIL_MESSAGE);
                         case INVALID_LAST_NAME -> request.setAttribute(INVALID_LAST_NAME, INVALID_LAST_MESSAGE);
                         case INVALID_LOGIN -> request.setAttribute(INVALID_LOGIN, INVALID_LOGIN_MESSAGE);
                         case INVALID_PASSWORD -> request.setAttribute(INVALID_PASSWORD, INVALID_PASSWORD_MESSAGE);
                         case INVALID_PHONE_NUMBER -> request.setAttribute(INVALID_PHONE_NUMBER, INVALID_PHONE_NUMBER_MESSAGE);
+                        case NOT_UNIQ_EMAIL -> request.setAttribute(INVALID_EMAIL, NOT_UNIQ_EMAIL_MESSAGE);
+                        case NOT_UNIQ_LOGIN -> request.setAttribute(INVALID_LOGIN, NOT_UNIQ_LOGIN_MESSAGE);
+                        case NOT_UNIQ_PHONE -> request.setAttribute(INVALID_PHONE_NUMBER, NOT_UNIQ_PHONE_MESSAGE);
                     }
                 }
-                router.setRedirectType();
                 router.setCurrentPage(REGISTRATION_PAGE);
             }
         } catch (ServiceException e) {

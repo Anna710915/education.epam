@@ -1,7 +1,4 @@
 package by.epam.finalproject.tag;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspTagException;
@@ -10,7 +7,6 @@ import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 
 public class FooterTag extends TagSupport {
-    private static final Logger logger = LogManager.getLogger();
 
     @Override
     public int doStartTag() throws JspTagException{
