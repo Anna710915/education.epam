@@ -6,7 +6,7 @@ import java.util.Map;
 
 import static by.epam.finalproject.controller.Parameter.*;
 
-public final class ValidatorImpl implements Validator {
+public class ValidatorImpl implements Validator {
     private static final String NAME_PATTERN = "^[A-Za-zА-Яа-я]{3,50}$";
     private static final String PRODUCT_NAME_PATTERN = "^[A-Za-zА-Яа-я\\s]{3,50}$";
     private static final String USER_LOGIN_PATTERN = "^[A-Za-zА-Яа-я0-9_]{4,16}$";
@@ -102,6 +102,38 @@ public final class ValidatorImpl implements Validator {
         }
         if(!isCorrectBirthday(birthday)){
             map.put(USER_BIRTHDAY,INVALID_BIRTHDAY);
+            result = false;
+        }
+        return result;
+    }
+
+    @Override
+    public boolean checkUpdateProfile(Map<String, String> updateData) {
+        boolean result = true;
+        String firstName = updateData.get(USER_FIRST_NAME);
+        String lastName = updateData.get(USER_LAST_NAME);
+        String email = updateData.get(USER_EMAIL);
+        String phone = updateData.get(USER_PHONE_NUMBER);
+        String birthday = updateData.get(USER_BIRTHDAY);
+
+        if(!isCorrectName(firstName)){
+            updateData.put(USER_FIRST_NAME,INVALID_FIRST_NAME);
+            result = false;
+        }
+        if(!isCorrectName(lastName)){
+            updateData.put(USER_LAST_NAME,INVALID_LAST_NAME);
+            result = false;
+        }
+        if(!isCorrectEmail(email)){
+            updateData.put(USER_EMAIL, INVALID_EMAIL);
+            result = false;
+        }
+        if(!isCorrectPhoneNumber(phone)){
+            updateData.put(USER_PHONE_NUMBER,INVALID_PHONE_NUMBER);
+            result = false;
+        }
+        if(!isCorrectBirthday(birthday)){
+            updateData.put(USER_BIRTHDAY,INVALID_BIRTHDAY);
             result = false;
         }
         return result;

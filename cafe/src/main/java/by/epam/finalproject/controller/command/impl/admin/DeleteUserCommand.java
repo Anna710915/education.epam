@@ -14,7 +14,7 @@ import static by.epam.finalproject.controller.Parameter.CURRENT_PAGE;
 import static by.epam.finalproject.controller.Parameter.USER_ID;
 
 public class DeleteUserCommand implements Command {
-    private UserService service = UserServiceImpl.getInstance();
+    private static final UserService service = UserServiceImpl.getInstance();
 
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
@@ -28,7 +28,7 @@ public class DeleteUserCommand implements Command {
             router.setRedirectType();
             return router;
         } catch (ServiceException e) {
-            throw new CommandException(e);
+            throw new CommandException("Exception in a DeleteUserCommand class ", e);
         }
     }
 }

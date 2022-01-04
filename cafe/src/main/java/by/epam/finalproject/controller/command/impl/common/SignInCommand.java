@@ -1,4 +1,4 @@
-package by.epam.finalproject.controller.command.impl;
+package by.epam.finalproject.controller.command.impl.common;
 
 import by.epam.finalproject.controller.Router;
 import by.epam.finalproject.controller.command.Command;
@@ -31,7 +31,7 @@ import static by.epam.finalproject.controller.PropertiesKey.USER_BLOCKED_MESSAGE
 
 public class SignInCommand implements Command {
     private static final Logger logger = LogManager.getLogger();
-    private UserService userService = UserServiceImpl.getInstance();
+    private static final UserService userService = UserServiceImpl.getInstance();
 
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {

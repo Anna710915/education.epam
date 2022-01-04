@@ -1,4 +1,4 @@
-package by.epam.finalproject.controller.command.impl;
+package by.epam.finalproject.controller.command.impl.common;
 
 import by.epam.finalproject.controller.Router;
 import by.epam.finalproject.controller.command.Command;

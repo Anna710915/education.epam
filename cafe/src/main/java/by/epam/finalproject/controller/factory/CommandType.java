@@ -1,11 +1,11 @@
 package by.epam.finalproject.controller.factory;
 
 import by.epam.finalproject.controller.command.Command;
-import by.epam.finalproject.controller.command.impl.*;
 import by.epam.finalproject.controller.command.impl.admin.DeleteUserCommand;
 import by.epam.finalproject.controller.command.impl.admin.FindAllUsersCommand;
 import by.epam.finalproject.controller.command.impl.admin.InsertNewProductCommand;
-import by.epam.finalproject.controller.command.impl.admin.UploadProductPhoto;
+import by.epam.finalproject.controller.command.impl.admin.UploadProductPhotoCommand;
+import by.epam.finalproject.controller.command.impl.common.*;
 
 import java.util.Optional;
 
@@ -18,7 +18,9 @@ public enum CommandType {
     FIND_ALL_MENU(new FindAllMenuCommand()),
     FIND_ALL_USERS(new FindAllUsersCommand()),
     DELETE_USER(new DeleteUserCommand()),
-    UPLOAD_PRODUCT_PHOTO(new UploadProductPhoto());
+    UPLOAD_PRODUCT_PHOTO(new UploadProductPhotoCommand()),
+    UPDATE_USER_PROFILE(new UpdateUserProfileCommand()),
+    CHANGE_PASSWORD(new ChangePasswordCommand());
 
     private final Command command;
 

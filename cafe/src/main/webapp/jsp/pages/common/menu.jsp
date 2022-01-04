@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: admin
-  Date: 30.12.2021
-  Time: 12:39
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="ctg" uri="customtags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -401,14 +394,15 @@
                         <div class="product_header">
                             <div class="product_title">${menu.nameFood}</div>
                         </div>
-                        <div class="product_figure"><img src="${menu.picturePath}" alt="${menu.nameFood}" title="${menu.nameFood}" class="product_img">
+<%--                        }/uploadImage?imagePath=${element.imageUrl}"--%>
+                        <div class="product_figure"><img src="${absolutePath}/uploadImage?imagePath=${menu.picturePath}" alt="" class="product_img">
                         </div>
                         <div class="product_info"><fmt:message key="menu.product_weight"/> ${menu.weight}</div>
-                        <div class="product_consist"><fmt:message key="menu.product_composition"/> ${menu.composition}<br><br><br></div>
+                        <div class="product_consist mb-2"><fmt:message key="menu.product_composition"/> ${menu.composition}<br><br><br></div>
                         <div class="">
-                                <div class="product_price"><b id="price">${menu.price}</b> <fmt:message key="menu.product_money"/> </div>
-                                <div class="product_price" ><b id="discount"><fmt:message key="menu.product_discount"/></b> ${menu.discount}%  </div>
-                                <div class="product_price"><b id="total_price"><fmt:message key="menu.product_price"/></b> ${menu.price}  </div>
+                                <div class="product_price "><b id="price">${menu.price}</b> <fmt:message key="menu.product_money"/> </div>
+                                <div class="product_price" ><b id="discount"><fmt:message key="menu.product_discount"/></b> <fmt:formatNumber type="number"  maxFractionDigits="0" value="${menu.discount * 100}"/>%  </div>
+                                <div class="product_price"><b id="total_price"><fmt:message key="menu.product_price"/></b> <fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2"  value="${menu.price - menu.discount * menu.price}"/>   </div>
 <%--                            <c:if test="${user.role eq 'CLIENT'}">--%>
 <%--                                <form action="${abs}/controller" method="post">--%>
 <%--                                    <input type="hidden" name="command" value="add_meal_to_cart_command">--%>
@@ -432,9 +426,9 @@
                                     </br>
                                     <div class="form-group" class="mb-3">
                                         <label class="form-label"><fmt:message key="menu.picture"/></label>
-                                        <input type="file" name="picture_path" class="form-control">
+                                        <input type="file" name="picture_path" class="form-control form-control-sm">
                                     </div>
-                                    <button type="submit" class="btn btn-primary"><fmt:message key="menu.insert_menu"/></button>
+                                    <button type="submit" class="btn btn-primary btn-sm"><fmt:message key="menu.insert_menu"/></button>
                                 </form>
                             </c:if>
                         </div>
@@ -442,6 +436,40 @@
                 </div>
             </c:forEach>
         </div>
+<%--        <div class="container">--%>
+<%--            <div class="row" style="justify-content: center">--%>
+<%--                <nav aria-label="Page navigation">--%>
+<%--                    <ul class="pagination">--%>
+<%--                        <li class="page-item">--%>
+<%--                            <c:choose>--%>
+<%--                                <c:when test="${requestScope.page > 1}">--%>
+<%--                                    <a class="page-link"--%>
+<%--                                       href="${pageContext.request.contextPath}/controller?command=show_all_jewelry&page=${requestScope.page-1}"--%>
+<%--                                       aria-label="Previous">--%>
+<%--                                        <span aria-hidden="true">&laquo;</span>--%>
+<%--                                    </a>--%>
+<%--                                </c:when>--%>
+<%--                                <c:when test="${requestScope.page < 1}">--%>
+<%--                                    <a class="page-link"--%>
+<%--                                       href="#"--%>
+<%--                                       aria-label="Previous">--%>
+<%--                                        <span aria-hidden="true">&laquo;</span>--%>
+<%--                                    </a>--%>
+<%--                                </c:when>--%>
+<%--                            </c:choose>--%>
+<%--                        </li>--%>
+<%--                        <li class="page-item"><span class="page-link">${requestScope.page}</span></li>--%>
+<%--                        <li class="page-item">--%>
+<%--                            <a class="page-link"--%>
+<%--                               href="${pageContext.request.contextPath}/controller?command=show_all_jewelry&page=${requestScope.page+1}"--%>
+<%--                               aria-label="Next">--%>
+<%--                                <span aria-hidden="true">&raquo;</span>--%>
+<%--                            </a>--%>
+<%--                        </li>--%>
+<%--                    </ul>--%>
+<%--                </nav>--%>
+<%--            </div>--%>
+<%--        </div>--%>
     </div>
     <div class="text-center">
         <ctg:footertag/>

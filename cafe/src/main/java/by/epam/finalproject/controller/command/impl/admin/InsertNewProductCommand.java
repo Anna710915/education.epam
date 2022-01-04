@@ -24,7 +24,7 @@ import static by.epam.finalproject.controller.PropertiesKey.INVALID_PRODUCT_WEIG
 public class InsertNewProductCommand implements Command {
     private static final Logger logger = LogManager.getLogger();
     private static final String DEFAULT_IMAGE = "picture\\default-image_1920.png";
-    private static MenuServiceImpl service = MenuServiceImpl.getInstance();
+    private static final MenuServiceImpl service = MenuServiceImpl.getInstance();
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
         Router router = new Router();
@@ -53,7 +53,7 @@ public class InsertNewProductCommand implements Command {
             }
             router.setCurrentPage(ADD_MENU_PAGE);
         } catch (ServiceException e) {
-            throw new CommandException(e);
+            throw new CommandException("Exception in a InsertNewProductCommand class ", e);
         }
         return router;
     }

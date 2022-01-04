@@ -4,7 +4,6 @@ package by.epam.finalproject.controller;
 import by.epam.finalproject.controller.command.Command;
 import by.epam.finalproject.controller.factory.CommandType;
 import by.epam.finalproject.exception.CommandException;
-import by.epam.finalproject.model.pool.ConnectionPool;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,17 +21,19 @@ import static by.epam.finalproject.controller.PathPage.ERROR_500;
 
 import static by.epam.finalproject.controller.Parameter.COMMAND;
 
-@WebServlet(urlPatterns = "/controller")
+@WebServlet(urlPatterns = {"/controller"})
 @MultipartConfig(fileSizeThreshold = 1024 * 1024,
         maxFileSize = 1024 * 1024 * 5,
         maxRequestSize = 1024 * 1024 * 25)
 public class Controller extends HttpServlet {
     private static final Logger logger = LogManager.getLogger();
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         logger.log(Level.DEBUG,"It's a " + request.getMethod());
         processRequest(request, response);
     }
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         logger.log(Level.DEBUG,"It's a " + request.getMethod());
         processRequest(request, response);
@@ -47,22 +48,19 @@ public class Controller extends HttpServlet {
             if(command.isPresent()){
                 router = command.get().execute(request);
                 String page = router.getCurrentPage();
-                if(router.getCurrentType().equals(Router.Type.FORWARD)){
+                if(router.getCurrentType() == Router.Type.FORWARD){
                     logger.log(Level.INFO,"Forward type.");
-                    request.getRequestDispatcher(page)
-                            .forward(request,response);
+                    request.getRequestDispatcher(page).forward(request,response);
                 }else{
                     logger.log(Level.INFO,"Redirect type.");
                     response.sendRedirect(page);
                 }
             }else {
-                throw new CommandException("Command " + commandName + " is empty.");
+                response.sendRedirect(ERROR_500);
             }
         } catch (CommandException e) {
             logger.log(Level.ERROR,e.getMessage());
-            Router router = new Router();
-            router.setCurrentPage(ERROR_500);
-            response.sendRedirect(router.getCurrentPage());
+            response.sendRedirect(ERROR_500);
         }
     }
 }

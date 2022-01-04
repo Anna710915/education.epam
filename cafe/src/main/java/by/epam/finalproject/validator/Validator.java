@@ -14,4 +14,5 @@ public interface Validator {
     boolean isCorrectProductDigit(String digit);
     boolean isCorrectDiscount(String discount);
     boolean isCorrectProductName(String name);
+    boolean checkUpdateProfile(Map<String, String> updateData);
 }

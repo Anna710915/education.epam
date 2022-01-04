@@ -16,6 +16,7 @@ public class EncodingFilter implements Filter {
     private static final Logger logger = LogManager.getLogger();
     private static final String CODE = "encoding";
     private String code;
+    @Override
     public void init(FilterConfig config) throws ServletException {
         logger.log(Level.INFO,"Encoding filter: method - init");
         code = config.getInitParameter(CODE);
@@ -29,6 +30,7 @@ public class EncodingFilter implements Filter {
         }
         chain.doFilter(request, response);
     }
+    @Override
     public void destroy() {
         logger.log(Level.INFO,"Encoding filter: method - destroy");
         code = null;

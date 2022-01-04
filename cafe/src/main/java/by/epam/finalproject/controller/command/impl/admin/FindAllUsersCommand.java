@@ -19,7 +19,7 @@ import static by.epam.finalproject.controller.PathPage.USERS_PAGE;
 
 public class FindAllUsersCommand implements Command {
     private static final Logger logger = LogManager.getLogger();
-    private UserService userService = UserServiceImpl.getInstance();
+    private static final UserService userService = UserServiceImpl.getInstance();
 
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
@@ -30,7 +30,7 @@ public class FindAllUsersCommand implements Command {
             router.setCurrentPage(USERS_PAGE);
             logger.log(Level.INFO,USERS_PAGE);
         } catch (ServiceException e) {
-            throw new CommandException(e);
+            throw new CommandException("Exception in a FindAllUsersCommand class ", e);
         }
         return router;
     }

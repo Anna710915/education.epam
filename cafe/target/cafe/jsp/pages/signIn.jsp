@@ -42,19 +42,19 @@
     <header>
         <%@include file="header/header.jsp"%>
     </header>
-<div class="container justify-content-center">
+<div class="container justify-content-center col-12 col-sm-6 mt-3">
     <h3 class="text-center p-3"><fmt:message key="form.sign_in"/></h3>
     <form name="LoginForm" method="post" action="${absolutePath}/controller" novalidate>
         <input type="hidden" name="command" value="sign_in"/>
         </br>
         <div class="form-group" class="mb-3">
             <label class="form-label">${log}</label>
-            <input type="text" name="login" class="form-control" value="${user.login}">
+            <input type="text" name="login" class="form-control form-control-sm" value="${user.login}">
         </div>
         </br>
         <div class="form-group" class="mb-3">
             <label class="form-label">${pass}</label>
-            <input type="password" name="password" class="form-control" value="${user.password}">
+            <input type="password" name="password" class="form-control form-control-sm" value="${user.password}">
         </div>
         <c:if test="${!empty errorLoginPassMessage}">
             <div style="color: red">

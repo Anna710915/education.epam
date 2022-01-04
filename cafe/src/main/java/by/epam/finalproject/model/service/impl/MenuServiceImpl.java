@@ -41,11 +41,6 @@ public class MenuServiceImpl implements MenuService {
         transaction.init(menuAbstractDao);
         try {
             List<Menu> menuList = menuAbstractDao.findAll();
-            if(!menuList.isEmpty()){
-                for(Menu item: menuList){
-                    item.setDiscount(item.getDiscount().multiply(BigDecimal.valueOf(100)));
-                }
-            }
             return menuList;
         } catch (DaoException e) {
             throw new ServiceException(e);
@@ -68,7 +63,7 @@ public class MenuServiceImpl implements MenuService {
             String composition = map.get(PRODUCT_COMPOSITION);
             double weight = Double.parseDouble(map.get(PRODUCT_WEIGHT));
             double calories = Double.parseDouble(map.get(PRODUCT_CALORIES));
-            LocalTime time = LocalTime.parse(map.get(PRODUCT_TIME), DateTimeFormatter.ofPattern("HH:MM"));
+            LocalTime time = LocalTime.parse(map.get(PRODUCT_TIME), DateTimeFormatter.ofPattern("HH:MM")); // TODO
             BigDecimal discount = BigDecimal.valueOf(Double.parseDouble(map.get(PRODUCT_DISCOUNT)));
             BigDecimal price = BigDecimal.valueOf(Double.parseDouble(map.get(PRODUCT_PRICE)));
             long sectionId = Long.parseLong(map.get(PRODUCT_SECTION));

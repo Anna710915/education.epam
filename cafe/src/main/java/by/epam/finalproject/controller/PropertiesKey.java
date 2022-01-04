@@ -8,6 +8,7 @@ public final class PropertiesKey {
     public static final String INVALID_LAST_MESSAGE = "registration.invalid_last_name";
     public static final String INVALID_LOGIN_MESSAGE = "registration.invalid_login";
     public static final String INVALID_PASSWORD_MESSAGE = "registration.invalid_password";
+    public static final String INVALID_REPEAT_PASSWORD_MESSAGE = "profile.invalid_repeat_password";
     public static final String INVALID_PHONE_NUMBER_MESSAGE = "registration.invalid_phone_number";
     public static final String NOT_UNIQ_EMAIL_MESSAGE = "registration.not_uniq_email";
     public static final String NOT_UNIQ_PHONE_MESSAGE = "registration.not_uniq_phone";

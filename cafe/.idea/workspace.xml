@@ -22,6 +22,7 @@
         <option value="jsf" />
         <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
       </list>
     </option>
@@ -55,9 +56,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/by/epam/finalproject/util/mail" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -70,11 +71,11 @@
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\java\by\epam\finalproject\model\dao\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp\pages\common" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\picture" />
       <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\resources\context" />
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\resources" />
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp\pages" />
-      <recent name="C:\Users\admin\source\JavaProjects\education.epam\cafe\src\main\webapp\jsp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.epam.finalproject.util" />
@@ -100,24 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.findUserByIdTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cafe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.finalproject.model.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.epam.finalproject.model.dao" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.model.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="findUserByIdTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ValidatorTest.isCorrectDiscountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cafe" />
       <extension name="coverage">
@@ -129,6 +112,24 @@
       <option name="PACKAGE_NAME" value="by.epam.finalproject.validator" />
       <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.ValidatorTest" />
       <option name="METHOD_NAME" value="isCorrectDiscountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorTest.isCorrectEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cafe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.finalproject.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.epam.finalproject.validator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.finalproject.validator.ValidatorTest" />
+      <option name="METHOD_NAME" value="isCorrectEmailTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -263,19 +264,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.MenuDaoTest.findAllMenuFirstTest" />
-      <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
       <item itemvalue="TestNG.ValidatorTest.isCorrectProductNameTest" />
       <item itemvalue="TestNG.ValidatorTest.isCorrectProductWeight" />
       <item itemvalue="TestNG.ValidatorTest.isCorrectDiscountTest" />
+      <item itemvalue="TestNG.ValidatorTest.isCorrectEmailTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.56" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ValidatorTest.isCorrectEmailTest" />
         <item itemvalue="TestNG.ValidatorTest.isCorrectDiscountTest" />
         <item itemvalue="TestNG.ValidatorTest.isCorrectProductWeight" />
         <item itemvalue="TestNG.ValidatorTest.isCorrectProductNameTest" />
         <item itemvalue="TestNG.MenuDaoTest.findAllMenuFirstTest" />
-        <item itemvalue="TestNG.UserDaoTest.findUserByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -331,6 +332,11 @@
       <workItem from="1640877585628" duration="6014000" />
       <workItem from="1640889656491" duration="11265000" />
       <workItem from="1640901408093" duration="1803000" />
+      <workItem from="1640932503027" duration="3367000" />
+      <workItem from="1641190404842" duration="16032000" />
+      <workItem from="1641206954105" duration="1104000" />
+      <workItem from="1641213200720" duration="17897000" />
+      <workItem from="1641281555349" duration="918000" />
     </task>
     <servers />
   </component>

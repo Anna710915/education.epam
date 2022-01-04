@@ -17,6 +17,7 @@ public class CurrentPageFilter implements Filter {
     private static final Logger logger = LogManager.getLogger();
     private static final String CONTROLLER_PATTERN = "/controller?";
 
+    @Override
     public void init(FilterConfig config) throws ServletException {
         logger.log(Level.INFO,"init");
     }
@@ -35,16 +36,6 @@ public class CurrentPageFilter implements Filter {
         logger.log(Level.INFO, query);
         session.setAttribute(CURRENT_PAGE, requestURI);
         chain.doFilter(request, response);
-//        String uri = servletRequest.getRequestURI();
-//        logger.log(Level.INFO,uri);
-//        String path = servletRequest.getPathInfo();
-//        logger.log(Level.INFO, path);
-//        StringBuffer url = servletRequest.getRequestURL();
-//        logger.log(Level.INFO, url.toString());
-//        String contextPath = servletRequest.getContextPath();
-//        logger.log(Level.INFO, contextPath);
-//        String servPath = servletRequest.getServletPath();
-//        logger.log(Level.INFO, servPath);
     }
     public void destroy() {
     }

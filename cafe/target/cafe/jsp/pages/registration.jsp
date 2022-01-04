@@ -57,7 +57,7 @@
     <header>
         <%@include file="header/header.jsp"%>
     </header>
-<div class="container justify-content-center">
+<div class="container justify-content-center col-12 col-sm-6 mt-3">
     <h3 class="text-center p-3">${reg_name}</h3>
     <form role="form" action="${absolutePath}/controller" method="post" class="needs-validation" novalidate>
         <input type="hidden" name="command" value="registration"/>
@@ -88,7 +88,7 @@
         </div>
         <div class="form-group">
             <label class="form-label">${user_email}</label>
-            <input type="email" name="email" class="form-control" placeholder="${e_email}" required pattern="^[A-Za-z0-9\.]{1,30}@[a-z]{2,7}\.[a-z]{2,4}$">
+            <input type="email" name="email" class="form-control form-control-sm" placeholder="${e_email}" required pattern="^[A-Za-z0-9\.]{1,30}@[a-z]{2,7}\.[a-z]{2,4}$">
             <div id="emailHelp" class="form-text"><fmt:message key="registration.correct_gmail"></fmt:message></div>
             <c:if test="${!empty invalid_email}">
                 <div class="invalid-feedback-backend" style="color: red">
@@ -124,7 +124,6 @@
             <div class="invalid-feedback">
                 <fmt:message key="registration.invalid_birthday"/>
             </div>
-
         </div>
         <div class="form-group" >
             <label class="form-label">${user_login}</label>
@@ -141,7 +140,7 @@
         </div>
         <div class="form-group">
             <label class="form-label">${user_pass}</label>
-            <input type="password" name="password" class="form-control" placeholder="${e_password}" required pattern="^[A-Za-zА-Яа-я0-9\.]{5,40}$">
+            <input type="password" name="password" class="form-control form-control-sm" placeholder="${e_password}" required pattern="^[A-Za-zА-Яа-я0-9\.]{5,40}$">
             <div id="passHelp" class="form-text"><fmt:message key="registration.correct_password"></fmt:message></div>
             <c:if test="${!empty invalid_password}">
                 <div class="invalid-feedback-backend" style="color: red">
@@ -152,7 +151,7 @@
                 <fmt:message key="registration.invalid_password"/>
             </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mb-3">
             <button type="submit" class="btn btn-success"><fmt:message key="registration.submit"/></button>
         </div>
         </div>

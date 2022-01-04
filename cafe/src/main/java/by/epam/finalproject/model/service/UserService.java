@@ -12,4 +12,6 @@ public interface UserService {
     boolean userRegistration(Map<String,String> mapData) throws ServiceException;
     List<User> findAllUsers() throws ServiceException;
     boolean deleteUser(long id) throws ServiceException;
+    Optional<User> updateUserProfile(User user, Map<String, String> updateData) throws ServiceException;
+    boolean changePasswordByOldPassword(Map<String, String> map, User user) throws ServiceException;
 }

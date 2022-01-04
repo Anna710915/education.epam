@@ -14,6 +14,10 @@ public class ValidatorTest {
     }
 
     @Test
+    public void isCorrectEmailTest(){
+        assertTrue(validator.isCorrectEmail("anna989898@gmail.com"));
+    }
+    @Test
     public void isCorrectProductNameTest(){
         assertTrue(validator.isCorrectProductName("Три мяса"));
     }

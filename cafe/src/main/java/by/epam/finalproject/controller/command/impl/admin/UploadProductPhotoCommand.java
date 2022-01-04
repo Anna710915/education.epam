@@ -19,39 +19,36 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.codec.binary.StringUtils;
 
 import static by.epam.finalproject.controller.Parameter.*;
-import static by.epam.finalproject.controller.PathPage.ADD_MENU_PAGE;
 import static by.epam.finalproject.controller.PathPage.ERROR_500;
 
-public class UploadProductPhoto implements Command {
+public class UploadProductPhotoCommand implements Command {
     private static final Logger logger = LogManager.getLogger();
-    private static final String ABSOLUTE_PATH = "C:\\Users\\admin\\source\\JavaProjects\\education.epam\\cafe\\src\\main\\webapp\\picture\\";
-    private static final String UPLOAD_DIR = "picture\\";
-    private static MenuService service = MenuServiceImpl.getInstance();
+    private static final String ABSOLUTE_PATH = "C:/Users/admin/source/picture/";
+    private static final MenuService service = MenuServiceImpl.getInstance();
 
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
         Router router = new Router();
         try (InputStream inputStream = request.getPart(PICTURE_PATH).getInputStream()){
             String submittedFileName = request.getPart(PICTURE_PATH).getSubmittedFileName();
-            System.out.println(submittedFileName);
-            Path imagePath = new File(ABSOLUTE_PATH + submittedFileName).toPath();
+            String path = ABSOLUTE_PATH + submittedFileName;
+            Path imagePath = new File(path).toPath();
             long bytes = Files.copy(
                     inputStream,
                     imagePath,
                     StandardCopyOption.REPLACE_EXISTING);
-            String image = UPLOAD_DIR + submittedFileName;
-            System.out.println(image);
+            logger.log(Level.INFO,"Upload result is successfully " + bytes + " " + path);
             String name = request.getParameter(PRODUCT_NAME);
-            System.out.println(name);
-            if(!service.updateProductPhoto(image, name)){
-                System.out.println(false);
+
+            if(!service.updateProductPhoto(path, name)){
                 router.setRedirectType();
                 router.setCurrentPage(ERROR_500);
                 return router;
             }
-            logger.log(Level.INFO,"Upload result is successfully " + bytes);
         } catch (IOException | ServletException | ServiceException e) {
             throw new CommandException("Upload photo failed ", e);
         }

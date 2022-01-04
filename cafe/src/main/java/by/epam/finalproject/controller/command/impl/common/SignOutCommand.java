@@ -1,23 +1,15 @@
-package by.epam.finalproject.controller.command.impl;
+package by.epam.finalproject.controller.command.impl.common;
 
 import by.epam.finalproject.controller.Router;
 import by.epam.finalproject.controller.command.Command;
 import by.epam.finalproject.exception.CommandException;
-import by.epam.finalproject.model.entity.User;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import static by.epam.finalproject.controller.Parameter.USER;
 import static by.epam.finalproject.controller.PathPage.GUEST_PAGE;
 
 public class SignOutCommand implements Command {
-
-    private static final Logger logger = LogManager.getLogger();
 
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {

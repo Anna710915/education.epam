@@ -13,7 +13,9 @@ public enum PagePermission {
             USERS_PAGE,
             PROFILE_PAGE,
             MENU_PAGE,
-            ADD_MENU_PAGE)),
+            ADD_MENU_PAGE,
+            SETTINGS_PAGE,
+            ERROR_500)),
     CLIENT(Set.of(START_PAGE,
             CLIENT_PAGE,
             GUEST_PAGE,
@@ -21,12 +23,15 @@ public enum PagePermission {
             ERROR_404,
             PROFILE_PAGE,
             DISCOUNT_PAGE,
-            MENU_PAGE)),
+            MENU_PAGE,
+            SETTINGS_PAGE,
+            ERROR_500)),
     GUEST(Set.of(START_PAGE,
             GUEST_PAGE,
             SIGN_PAGE,
             ERROR_404,
-            REGISTRATION_PAGE));
+            REGISTRATION_PAGE,
+            ERROR_500));
 
     Set<String> userPages;
     PagePermission(Set<String> userPages){
